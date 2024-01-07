@@ -1,118 +1,323 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Image from 'next/image';
+import Layout from '../components/layout';
+import Link from 'next/link';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import {Carousel} from 'react-responsive-carousel';
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <Layout pageName="Home" pageDescription="Home">
+      <Carousel
+        className="p-10"
+        showThumbs={false}
+        showArrows={true}
+        autoPlay={true}
+      >
+        <div>
+          <Image
+            src="/images/home/pic1.png"
+            alt="pic1"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 1</p>
         </div>
+        <div>
+          <Image
+            src="/images/home/pic2.png"
+            alt="pic2"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 2</p>
+        </div>
+        <div>
+          <Image
+            src="/images/home/pic3.png"
+            alt="pic3"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 3</p>
+        </div>
+        <div>
+          <Image
+            src="/images/home/pic4.png"
+            alt="pic4"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 4</p>
+        </div>
+        <div>
+          <Image
+            src="/images/home/pic5.png"
+            alt="pic5"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 5</p>
+        </div>
+        <div>
+          <Image
+            src="/images/home/pic6.png"
+            alt="pic5"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 6</p>
+        </div>
+        <div>
+          <Image
+            src="/images/home/pic7.png"
+            alt="pic5"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 7</p>
+        </div>
+        <div>
+          <Image
+            src="/images/home/pic8.png"
+            alt="pic5"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 8</p>
+        </div>
+        <div>
+          <Image
+            src="/images/home/pic9.png"
+            alt="pic5"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 9</p>
+        </div>
+      </Carousel>
+      <section className="flex flex-col justify-center items-center p-5 bg-white">
+        <Image src="/images/arrow.png" alt="arrow" width={100} height={100} />
+        <h1 className="text-3xl">West Seattle</h1>
+      </section>
+      <section className="flex flex-col justify-center items-center p-5 bg-white">
+        <h1 className="text-3xl">Ballard</h1>
+
+        <Image src="/images/arrow2.png" alt="arrow" width={100} height={100} />
+      </section>
+
+      <Carousel
+        className="p-10"
+        showThumbs={false}
+        showArrows={true}
+        autoPlay={true}
+      >
+        <div>
+          <Image
+            src="/images/ballardpics/1.png"
+            alt="1"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 1</p>
+        </div>
+        <div>
+          <Image
+            src="/images/ballardpics/2.png"
+            alt="2"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 2</p>
+        </div>
+        <div>
+          <Image
+            src="/images/ballardpics/3.png"
+            alt="3"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 3</p>
+        </div>
+        <div>
+          <Image
+            src="/images/ballardpics/4.png"
+            alt="4"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 4</p>
+        </div>
+        <div>
+          <Image
+            src="/images/ballardpics/5.png"
+            alt="5"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 5</p>
+        </div>
+        <div>
+          <Image
+            src="/images/ballardpics/6.png"
+            alt="5"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 6</p>
+        </div>
+        <div>
+          <Image
+            src="/images/ballardpics/7.png"
+            alt="5"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 7</p>
+        </div>
+        <div>
+          <Image
+            src="/images/ballardpics/8.png"
+            alt="5"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 8</p>
+        </div>
+        <div>
+          <Image
+            src="/images/ballardpics/9.png"
+            alt="5"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 9</p>
+        </div>
+        <div>
+          <Image
+            src="/images/ballardpics/10.png"
+            alt="10"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 10</p>
+        </div>
+        <div>
+          <Image
+            src="/images/ballardpics/11.png"
+            alt="11"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 11</p>
+        </div>
+        <div>
+          <Image
+            src="/images/ballardpics/12.png"
+            alt="12"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 12</p>
+        </div>
+        <div>
+          <Image
+            src="/images/ballardpics/13.png"
+            alt="5"
+            width={378}
+            height={504}
+          />
+          <p className="legend">Image 13</p>
+        </div>
+      </Carousel>
+      <div>
+        <div className="bg-yellow-300 flex justify-center items-center p-10">
+          <div className="text-center">
+            <h1 className="text-6xl ">LML Repair</h1>
+            <p className="text-3xl my-10">
+              Providing The Best Electronic Repair <br />
+              Service In The Greater Seattle Area.
+            </p>
+
+            <Link href="/bookings" className="text-3xl bg-black p-4 text-white hover:bg-white hover:text-black cursor-pointer">
+           
+                Book Repair
+            
+            </Link>
+          </div>
+        </div>
+        <div className="text-center p-10 bg-white">
+          <h1 className="text-2xl font-bold my-5">
+            Experience An LML Repair Today
+          </h1>
+          <p className="text-lg">
+            Enter our office today, and you can expect premier customer service,
+            starting with a low cost diagnostic test and a free quote for
+            repairs with no obligation to purchase. With waiting times as short
+            as 30 minutes and a large stock of high quality parts, and
+            reasonable prices we are ready to help you should you decide to go
+            ahead with the fix. Combine this 5-star service with afforable
+            warranty plans on all repairs, and it’s no wonder that LML Repair is
+            Seattle’s first choice for electronic repairs.
+          </p>
+
+          <h1 className="text-2xl font-bold my-5">
+            Schedule your repair online!
+          </h1>
+          <p className="text-lg">
+            At LML Repair, all repairs come with low cost diagnostics and
+            afforable warranty plans – use our fast device repair services with
+            confidence and leave with peace of mind that we’ve got your back, no
+            matter what happens.
+          </p>
+        </div>
+        <div className="bg-yellow-300 text-center p-10 bg-white">
+          <h1 className="text-2xl font-bold">HIGH-QUALITY PARTS</h1>
+          <p className="text-lg my-5">
+            LML Repair only uses high-quality OEM and aftermarket parts for
+            repairs
+          </p>
+
+          <h1 className="text-2xl font-bold">LOST COST DIAGNOSIS</h1>
+          <p className="text-lg my-5">
+            Not sure what’s wrong? We’ll diagnose your issue at a low cost. With
+            fix, no fee.
+          </p>
+          <h1 className="text-2xl font-bold">
+            CERTIFIED TECHNICIAN SAME-DAY REPAIR
+          </h1>
+          <p className="text-lg my-5">
+            Knowledgeable, passionate service from qualified and trained
+            experts. Most LML repairs are completed within 30 minutes.
+          </p>
+          <h1 className="text-2xl font-bold">AFFORDABLE WARRANTY PLANS</h1>
+          <p className="text-lg my-5">
+            All repairs come with a multitude of afforable warranty plans for
+            your peace of mind.
+          </p>
+          {/* <small className="text-sm my-5">No Refunds</small>*/}
+          <h1 className="text-2xl font-bold">BEST REPAIR SERVICE IN SEATTLE</h1>
+          <p className="text-lg my-5">
+            LML Repair offers Seattle’s friendliest, fastest repair service with
+            expert repairs for a variety of iPhone, iPad, Apple Watch, MacBook,
+            Samsung, Pixel, Surface Pro, Nintendo Switch, Playstation, Xbox, LG,
+            Oneplus, Motorola, PC devices. <br />
+            And, with an affordable warranty plans on all repairs, we’ve got
+            your back when things go wrong in future
+          </p>
+        </div>
+
+        <div className="elfsight-app-46eba886-4955-417d-9e36-b02ca1a0e69b p-20"></div>
+
+        <div className="elfsight-app-21af9976-08a4-410b-ab8c-1a076f700795 p-20"></div>
+
+        <span>
+          <div className="elfsight-app-6023ac63-076a-486b-ae9e-8c00b007ab8e"></div>
+        </span>
+
+        <span>
+          <div className="elfsight-app-f2133ae9-d9ce-43bd-9523-90644adb4c8c"></div>
+        </span>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </Layout>
+  );
 }
