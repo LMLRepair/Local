@@ -4,6 +4,7 @@ import Link from 'next/link';
 import clientPromise from '../../../../lib/mongodb';
 
 export default function Iphones({data}) {
+  console.log("Here is the Data" + data);
   return (
     <Layout pageName="IPhone Series" Description="IPhone Series Page">
       <main className="p-5 bg-white">
@@ -36,12 +37,14 @@ export async function getStaticProps() {
   try {
     const client = await clientPromise;
     const db = client.db('apple');
+    console.log("Inside GetStaticProps" + db);
 
     const data = await db
       .collection('listiphone')
       .find({})
       .sort({rank: -1})
       .toArray();
+      console.log("InsideGetStaticProps" + data);
 
     return {
       props: {data: JSON.parse(JSON.stringify(data))},

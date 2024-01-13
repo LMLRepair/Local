@@ -31,14 +31,12 @@ export default function Apple() {
           {micros.map((micro) => (
             <figure key={micro.index} className="border-4 border-black p-5">
               <Link href={'/services/microsoft/' + micro.href}>
-                <a>
                   <Image
                     src={'/images/microsoft/' + micro.src}
                     alt={micro.series}
                     width={200}
                     height={200}
                   />
-                </a>
               </Link>
 
               <figcaption>{micro.category}</figcaption>

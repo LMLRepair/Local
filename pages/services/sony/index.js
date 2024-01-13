@@ -14,14 +14,14 @@ export default function Sony({data}) {
           {data.map((son) => (
             <figure key={son.index} className="border-4 border-black p-5">
               <Link href={'/services/sony/' + son.href}>
-                <a>
+               
                   <Image
                     src={'/images/sony/' + son.src}
                     alt={son.series}
                     width={200}
                     height={200}
                   />
-                </a>
+            
               </Link>
               <figcaption>{son.series}</figcaption>
             </figure>
