@@ -14,7 +14,7 @@ export default function surfacepro({data}) {
           {data.map((surfacepro) => (
             <figure
               key={surfacepro.index}
-              className="border-4 border-black p-5"
+              className="border-4 border-black p-5 w-48 flex flex-col justify-center items-center "
             >
               <Link href={'/services/microsoft/surfacepro/' + surfacepro.href}>
               

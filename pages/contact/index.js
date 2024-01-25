@@ -4,8 +4,8 @@ export default function Contact() {
   return (
     <Layout pageName="Contact" pageDescription="Contact">
       <main className="">
-        <h1 className="text-3xl mx-auto flex justify-center text-center mb-10 p-10">
-          Where You Can Find Us
+        <h1 className="text-4xl tracking-widest mx-auto flex justify-center text-center mb-10 p-10">
+          Contact
         </h1>
 
         <section>

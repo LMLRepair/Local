@@ -7,25 +7,25 @@ export default function Apple() {
     {
       category: 'iPhone',
       href: 'iphone',
-      src: 'iphone.jpeg',
+      src: 'iphone.png',
     },
 
     {
       category: 'iPad',
       href: 'ipad',
-      src: 'ipad.jpeg',
+      src: 'ipad.png',
     },
 
     {
       category: 'Watch',
       href: 'watch',
-      src: 'watch.jpg',
+      src: 'watch.png',
     },
 
     {
       category: 'MacBook',
       href: 'macbook',
-      src: 'macbook.jpeg',
+      src: 'macbook.png',
     },
   ];
   return (

@@ -26,7 +26,7 @@ export default function Blog() {
     <Layout pageName="Blogs" Description="Blogs Page">
       <main className="p-5 bg-white">
         <section className="flex flex-col justify-center items-center p-5 bg-white">
-          <h1 className="text-3xl">Blogs</h1>
+          <h1 className="text-3xl ">Blogs</h1>
         </section>
         <article className="grid grid-row-3 gap-10 content-center items-center text-center justify-items-center p-10">
           {categories.map((category) => (

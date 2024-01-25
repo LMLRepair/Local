@@ -18,8 +18,8 @@ export default function Id({xbox}) {
           <Image
             src={'/images/microsoft/xbox/' + xbox[0].src}
             alt={xbox[0].model}
-            width={100}
-            height={120}
+            width={200}
+            height={200}
           />
         </section>
         <article className="flex gap-10 justify-center p-10">

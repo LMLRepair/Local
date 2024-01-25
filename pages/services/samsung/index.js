@@ -7,17 +7,17 @@ export default function Samsung() {
     {
       category: "S Series",
       href: "galaxys",
-      src: "galaxys.jpg",
+      src: "galaxys.png",
     },
     {
       category: "Note Series",
       href: "galaxynote",
-      src: "galaxynote.jpg",
+      src: "galaxynote.png",
     },
     {
       category: "A Series",
       href: "galaxya",
-      src: "galaxya.jpg",
+      src: "galaxya.png",
     },
   ];
   return (

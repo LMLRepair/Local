@@ -19,8 +19,8 @@ export default function Iphones({data}) {
                   <Image
                     src={'/images/apple/iphone/' + iphone.src}
                     alt={iphone.series}
-                    width={100}
-                    height={120}
+                    width={200}
+                    height={200}
                   />
            
               </Link>

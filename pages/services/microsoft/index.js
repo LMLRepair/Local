@@ -29,7 +29,7 @@ export default function Apple() {
         </section>
         <article className="grid grid-cols-2 gap-10 content-center items-center text-center justify-items-center p-10">
           {micros.map((micro) => (
-            <figure key={micro.index} className="border-4 border-black p-5">
+            <figure key={micro.index} className="border-4 border-black p-5 w-48 flex flex-col justify-center items-center ">
               <Link href={'/services/microsoft/' + micro.href}>
                   <Image
                     src={'/images/microsoft/' + micro.src}

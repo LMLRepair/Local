@@ -12,14 +12,14 @@ export default function watch({data}) {
         </section>
         <article className="grid grid-cols-2 gap-10 content-center items-center text-center justify-items-center p-10">
           {data.map((watch) => (
-            <figure key={watch.index} className="border-4 border-black p-5">
+            <figure key={watch.index} className="border-4 border-black p-5 w-48 flex flex-col justify-center items-center  ">
               <Link href={'/services/apple/watch/' + watch.href}>
                
                   <Image
                     src={'/images/apple/watch/' + watch.src}
                     alt={watch.series}
-                    width={100}
-                    height={120}
+                    width={200}
+                    height={200}
                   />
              
               </Link>

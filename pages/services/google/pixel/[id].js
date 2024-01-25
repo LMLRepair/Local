@@ -18,8 +18,8 @@ export default function Id({phone}) {
           <Image
             src={'/images/google/pixel/' + phone[0].src}
             alt={phone[0].model}
-            width={100}
-            height={120}
+            width={200}
+            height={200}
           />
         </section>
         <article className="flex gap-10 justify-center p-10">

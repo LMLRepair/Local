@@ -13,8 +13,8 @@ export default function motorola() {
             <Image
               src={'/images/brands/motorola.png'}
               alt="Macbook pic"
-              width={300}
-              height={300}
+              width={200}
+              height={200}
             />
           </div>
 

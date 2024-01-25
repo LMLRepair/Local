@@ -5,7 +5,7 @@ export default function Bookings() {
     <Layout pageName="Bookings" Description="Bookings">
       <div className="container mx-auto">
         <div className="flex flex-col justify-center items-center p-10 bg-white">
-          <h1 className="text-3xl mb-10">Bookings</h1>
+          <h1 className="text-4xl mb-10 tracking-widest">Bookings</h1>
 
           <p className="text-md ">
             Make sure to select your ideal location: West Seattle or Ballard

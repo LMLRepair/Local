@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <footer className="mx-auto bg-yellow-300 py-40  ">
-      
+      {/*  
       <section className="flex gap-5 justify-center items-center mb-5">
         <Image src="/images/ballard.png" alt="Fa" height={100} width={200} />{' '}
         <Link href="https://g.page/r/CQNIox3az0mJEBA" className="w-10 ">
@@ -23,7 +23,7 @@ export default function Footer() {
             alt="Yelp"
           />
         </Link>
-        <Link href="https://www.facebook.com/lookmanlookrepair" className="w-10">
+        <Link href="https://www.facebook.com/lmlrepairballard/" className="w-10">
           <Image
             src="/images/socials/facebook.png"
             alt="FaceBook"
@@ -56,7 +56,7 @@ export default function Footer() {
             alt="Yelp"
           />
         </Link>
-        <Link href="https://www.facebook.com/lookmanlookrepair" className="w-10">
+        <Link href="https://www.facebook.com/lmlrepairwestseattle/" className="w-10">
           <Image
             src="/images/socials/facebook.png"
             alt="FaceBook"
@@ -65,7 +65,7 @@ export default function Footer() {
           />
         </Link>
       </section>
-  
+  */}
     </footer>
   );
 }

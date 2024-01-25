@@ -18,8 +18,8 @@ export default function Id({one}) {
           <Image
             src={'/images/oneplus/' + one[0].src}
             alt={one[0].model}
-            width={100}
-            height={120}
+            width={200}
+            height={200}
           />
         </section>
         <article className="flex gap-10 justify-center p-10">

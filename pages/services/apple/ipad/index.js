@@ -18,8 +18,8 @@ export default function Ipad({data}) {
                   <Image
                     src={'/images/apple/ipad/' + ipad.src}
                     alt={ipad.series}
-                    width={100}
-                    height={120}
+                    width={200}
+                    height={200}
                   />
               
               </Link>

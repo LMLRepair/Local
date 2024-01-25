@@ -21,8 +21,8 @@ export default function Id({surfacebook}) {
           <Image
             src={'/images/microsoft/surfacebook/' + surfacebook[0].src}
             alt={surfacebook[0].model}
-            width={100}
-            height={120}
+            width={200}
+            height={200}
           />
         </section>
         <article className="flex gap-10 justify-center p-10">

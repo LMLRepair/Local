@@ -18,8 +18,8 @@ export default function note({data}) {
                   <Image
                     src={'/images/samsung/galaxynote/' + note.src}
                     alt={note.series}
-                    width={100}
-                    height={120}
+                    width={200}
+                    height={200}
                   />
          
               </Link>

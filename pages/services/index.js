@@ -7,11 +7,11 @@ export default function Services() {
     <Layout pageName="Services" Description="Services">
       <main className="p-5 bg-white">
         <section className="flex flex-col justify-center items-center p-5 bg-white">
-          <h1 className="text-3xl">Services</h1>
+          <h1 className="text-4xl tracking-widest">Services</h1>
         </section>
         <article className="grid gap-5 justify-center text-center p-10">
           <figure className="border-4 border-black p-5">
-            <Link href="/services/apple">
+            <Link href="/services/apple" >
             
                 <Image
                   src="/images/brands/apple.png"

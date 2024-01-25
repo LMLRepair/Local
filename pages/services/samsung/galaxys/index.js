@@ -17,8 +17,8 @@ export default function S({ data }) {
                 <Image
                   src={"/images/samsung/galaxys/" + s.src}
                   alt={s.series}
-                  width={100}
-                  height={120}
+                  width={200}
+                  height={200}
                 />
               </Link>
               <figcaption>{s.series}</figcaption>

@@ -1,247 +1,74 @@
-import Image from 'next/image';
-import Layout from '../components/layout';
-import Link from 'next/link';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import {Carousel} from 'react-responsive-carousel';
+import Image from "next/image";
+import Layout from "../components/layout";
+import Link from "next/link";
+
+// here is the new carousel
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 export default function Home() {
+  const images1 = [
+    {
+      original: "/images/mainpics/1.png",
+      thumbnail: "/images/mainpics/1.png",
+    },
+    {
+      original: "/images/mainpics/2.png",
+      thumbnail: "/images/mainpics/2.png",
+    },
+    {
+      original: "/images/mainpics/3.png",
+      thumbnail: "/images/mainpics/3.png",
+    },
+    {
+      original: "/images/mainpics/4.png",
+      thumbnail: "/images/mainpics/4.png",
+    },
+    {
+      original: "/images/mainpics/5.png",
+      thumbnail: "/images/mainpics/5.png",
+    },
+    {
+      original: "/images/mainpics/6.png",
+      thumbnail: "/images/mainpics/6.png",
+    },
+    {
+      original: "/images/mainpics/7.png",
+      thumbnail: "/images/mainpics/7.png",
+    },
+    {
+      original: "/images/mainpics/8.png",
+      thumbnail: "/images/mainpics/8.png",
+    },
+    {
+      original: "/images/mainpics/9.png",
+      thumbnail: "/images/mainpics/9.png",
+    },
+  ];
+  
   return (
     <Layout pageName="Home" pageDescription="Home">
-      <Carousel
-        className="p-10"
-        showThumbs={false}
-        showArrows={true}
-        autoPlay={true}
-      >
-        <div>
-          <Image
-            src="/images/home/pic1.png"
-            alt="pic1"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 1</p>
-        </div>
-        <div>
-          <Image
-            src="/images/home/pic2.png"
-            alt="pic2"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 2</p>
-        </div>
-        <div>
-          <Image
-            src="/images/home/pic3.png"
-            alt="pic3"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 3</p>
-        </div>
-        <div>
-          <Image
-            src="/images/home/pic4.png"
-            alt="pic4"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 4</p>
-        </div>
-        <div>
-          <Image
-            src="/images/home/pic5.png"
-            alt="pic5"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 5</p>
-        </div>
-        <div>
-          <Image
-            src="/images/home/pic6.png"
-            alt="pic5"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 6</p>
-        </div>
-        <div>
-          <Image
-            src="/images/home/pic7.png"
-            alt="pic5"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 7</p>
-        </div>
-        <div>
-          <Image
-            src="/images/home/pic8.png"
-            alt="pic5"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 8</p>
-        </div>
-        <div>
-          <Image
-            src="/images/home/pic9.png"
-            alt="pic5"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 9</p>
-        </div>
-      </Carousel>
-      <section className="flex flex-col justify-center items-center p-5 bg-white">
-        <Image src="/images/arrow.png" alt="arrow" width={100} height={100} />
-        <h1 className="text-3xl">West Seattle</h1>
-      </section>
-      <section className="flex flex-col justify-center items-center p-5 bg-white">
-        <h1 className="text-3xl">Ballard</h1>
 
-        <Image src="/images/arrow2.png" alt="arrow" width={100} height={100} />
-      </section>
+      <div className="p-10">
+        <ImageGallery items={images1} autoPlay="true" />
+      </div>
 
-      <Carousel
-        className="p-10"
-        showThumbs={false}
-        showArrows={true}
-        autoPlay={true}
-      >
-        <div>
-          <Image
-            src="/images/ballardpics/1.png"
-            alt="1"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 1</p>
-        </div>
-        <div>
-          <Image
-            src="/images/ballardpics/2.png"
-            alt="2"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 2</p>
-        </div>
-        <div>
-          <Image
-            src="/images/ballardpics/3.png"
-            alt="3"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 3</p>
-        </div>
-        <div>
-          <Image
-            src="/images/ballardpics/4.png"
-            alt="4"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 4</p>
-        </div>
-        <div>
-          <Image
-            src="/images/ballardpics/5.png"
-            alt="5"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 5</p>
-        </div>
-        <div>
-          <Image
-            src="/images/ballardpics/6.png"
-            alt="5"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 6</p>
-        </div>
-        <div>
-          <Image
-            src="/images/ballardpics/7.png"
-            alt="5"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 7</p>
-        </div>
-        <div>
-          <Image
-            src="/images/ballardpics/8.png"
-            alt="5"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 8</p>
-        </div>
-        <div>
-          <Image
-            src="/images/ballardpics/9.png"
-            alt="5"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 9</p>
-        </div>
-        <div>
-          <Image
-            src="/images/ballardpics/10.png"
-            alt="10"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 10</p>
-        </div>
-        <div>
-          <Image
-            src="/images/ballardpics/11.png"
-            alt="11"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 11</p>
-        </div>
-        <div>
-          <Image
-            src="/images/ballardpics/12.png"
-            alt="12"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 12</p>
-        </div>
-        <div>
-          <Image
-            src="/images/ballardpics/13.png"
-            alt="5"
-            width={378}
-            height={504}
-          />
-          <p className="legend">Image 13</p>
-        </div>
-      </Carousel>
+  
+
       <div>
         <div className="bg-yellow-300 flex justify-center items-center p-10">
           <div className="text-center">
-            <h1 className="text-6xl ">LML Repair</h1>
+            <h1 className="text-6xl tracking-widest">LML Repair</h1>
             <p className="text-3xl my-10">
-              Providing The Best Electronic Repair <br />
+              Best Electronic Repair <br />
               Service In The Greater Seattle Area.
             </p>
 
-            <Link href="/bookings" className="text-3xl bg-black p-4 text-white hover:bg-white hover:text-black cursor-pointer">
-           
-                Book Repair
-            
+            <Link
+              href="/bookings"
+              className="text-3xl bg-black p-4 text-white hover:bg-white hover:text-black cursor-pointer"
+            >
+              Book Repair
             </Link>
           </div>
         </div>

@@ -12,6 +12,7 @@ body {
   margin: 0;
 }
 
+
 /*  font-family: myFont;  */
 
 a {
@@ -22,6 +23,8 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 table,
@@ -34,6 +37,13 @@ h1,
 figcaption {
   font-family: myFont;
 }
+
+
+
+/* Testing   */
+
+
+
 
 /*
 

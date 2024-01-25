@@ -18,8 +18,8 @@ export default function Pixel({data}) {
                   <Image
                     src={'/images/google/pixel/' + pixel.src}
                     alt={pixel.series}
-                    width={100}
-                    height={120}
+                    width={200}
+                    height={200}
                   />
                 
               </Link>

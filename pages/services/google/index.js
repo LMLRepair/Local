@@ -7,7 +7,7 @@ export default function Google() {
     {
       category: 'Pixel',
       href: 'pixel',
-      src: 'pixel.jpg',
+      src: 'pixel.png',
     },
   ];
   return (
@@ -16,7 +16,7 @@ export default function Google() {
         <section className="flex flex-col justify-center items-center p-5 bg-white">
           <h1 className="text-3xl">Google Repairs</h1>
         </section>
-        <article className="grid grid-cols-2 gap-10 content-center items-center text-center justify-items-center p-10">
+        <article className=" flex flex-col justify-center items-center text-center  p-10">
           {googles.map((google) => (
             <figure key={google.index} className="border-4 border-black p-5">
               <Link href={'/services/google/' + google.href}>

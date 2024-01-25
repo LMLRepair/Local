@@ -47,7 +47,7 @@ function Header() {
         </Link>
         <Link
           href="/bookings"
-          className="text-xl  cursor-pointer hover:underline bg-black text-white "
+          className="text-xl  cursor-pointer hover:underline   "
         >
           Bookings
         </Link>

@@ -17,7 +17,7 @@ export default function surfacebook({data}) {
           {data.map((surfacebook) => (
             <figure
               key={surfacebook.index}
-              className="border-4 border-black p-5"
+              className="border-4 border-black p-5 w-48 flex flex-col justify-center items-center "
             >
               <Link
                 href={'/services/microsoft/surfacebook/' + surfacebook.href}
