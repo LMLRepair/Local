@@ -10,7 +10,6 @@ export default function WestSeattle() {
           <iframe
             src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Sylgpw0NvPjz4k7eG_cAlYcm7isMqxnFqRVglVotWHI5Ea-XR4iUPpfLY8UDKtPZQTnlUEiQN?gv=true"
             height="1500"
-            frameborder="0"
             title="Google Appointments"
             className="w-full m-5"
           ></iframe>

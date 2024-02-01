@@ -10,7 +10,6 @@ export default function NorthSeattle() {
           <iframe
             src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1S1uVlHII_xeABjSWqz6uHXpPx-mwyvFLYpQRf-AbJieH8RO1JOv0zc5TwVqw804_HO0IR-dI-?gv=true"
             height="1500"
-            frameborder="0"
             title="Google Appointments"
             className="w-full m-5"
           ></iframe>

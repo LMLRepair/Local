@@ -10,7 +10,6 @@ export default function Ballard() {
           <iframe
             src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3kTo7HK_Lp_pEZzjAZ1RnGi1cjLDoxVADBEEYlgUntR3fSos0INxENe31UnnZ2D072RsQSklp1?gv=true"
             height="1500"
-            frameborder="0"
             title="Google Appointments"
             className="w-full m-5"
           ></iframe>
