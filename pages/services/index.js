@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import Layout from '../../components/layout';
-import Link from 'next/link';
+import Image from "next/image";
+import Layout from "../../components/layout";
+import Link from "next/link";
 
 export default function Services() {
   return (
@@ -11,128 +11,87 @@ export default function Services() {
         </section>
         <article className="grid gap-5 justify-center text-center p-10">
           <figure className="border-4 border-black p-5">
-            <Link href="/services/apple" >
-            
-                <Image
-                  src="/images/brands/apple.png"
-                  alt="Apple"
-                  width={200}
-                  height={200}
-                />
-         
+            <Link href="/services/repairs">
+              <Image
+                src="/images/services/repairs.png"
+                alt="Repairs"
+                width={200}
+                height={200}
+              />
             </Link>
-            <figcaption>Apple</figcaption>
+            <figcaption>Repairs</figcaption>
           </figure>
 
           <figure className="border-4 border-black p-5">
-            <Link href="/services/samsung">
-          
-                <Image
-                  src="/images/brands/samsung.png"
-                  alt="Samsung"
-                  width={200}
-                  height={200}
-                />
-       
+            <Link href="/services/software">
+              <Image
+                src="/images/services/software.png"
+                alt="Software"
+                width={200}
+                height={200}
+              />
             </Link>
-            <figcaption>Samsung</figcaption>
+            <figcaption>Software Solutions</figcaption>
           </figure>
 
           <figure className="border-4 border-black p-5">
-            <Link href="/services/google">
-          
-                <Image
-                  src="/images/brands/google.png"
-                  alt="Google"
-                  width={200}
-                  height={200}
-                />
-             
+            <Link href="/services/diagnostics">
+              <Image
+                src="/images/services/diagnostics.png"
+                alt="Diagnostics"
+                width={200}
+                height={200}
+              />
             </Link>
-            <figcaption>Google</figcaption>
+            <figcaption>Diagnostics</figcaption>
           </figure>
 
           <figure className="border-4 border-black p-5">
-            <Link href="/services/microsoft">
-                              <Image
-                  src="/images/brands/microsoft.png"
-                  alt="microsoft"
-                  width={200}
-                  height={200}
-                />
-       
+            <Link href="/services/cleaning">
+              <Image
+                src="/images/services/cleaning.png"
+                alt="Cleaning"
+                width={200}
+                height={200}
+              />
             </Link>
-            <figcaption>Microsoft</figcaption>
+            <figcaption>Device Cleaning</figcaption>
           </figure>
 
           <figure className="border-4 border-black p-5">
-            <Link href="/services/oneplus">
-          
-                <Image
-                  src="/images/brands/oneplus.png"
-                  alt="Oneplus"
-                  width={200}
-                  height={200}
-                />
-         
+            <Link href="/services/customizations">
+              <Image
+                src="/images/services/customizations.png"
+                alt="Customizations"
+                width={200}
+                height={200}
+              />
             </Link>
-            <figcaption>OnePlus</figcaption>
+            <figcaption>Customizations</figcaption>
           </figure>
 
           <figure className="border-4 border-black p-5">
-            <Link href="/services/lg">
-           
-                <Image
-                  src="/images/brands/lg.png"
-                  alt="LG"
-                  width={200}
-                  height={200}
-                />
-              
+            <Link href="/services/devicebuybackandtradein">
+              <Image
+                src="/images/services/devicebuybackandtradein.png"
+                alt="Device Buyback & Trade-In"
+                width={200}
+                height={200}
+              />
             </Link>
-            <figcaption>LG</figcaption>
+            <figcaption>Device Buyback and Trade-In</figcaption>
           </figure>
 
           <figure className="border-4 border-black p-5">
-            <Link href="/services/sony">
-            
-                <Image
-                  src="/images/brands/sony.png"
-                  alt="sony"
-                  width={200}
-                  height={200}
-                />
-             
+            <Link href="/services/unlocks">
+              <Image
+                src="/images/services/unlocks.png"
+                alt="unlocks"
+                width={200}
+                height={200}
+              />
             </Link>
-            <figcaption>Sony</figcaption>
-          </figure>
-
-          <figure className="border-4 border-black p-5">
-            <Link href="/services/nintendo">
-            
-                <Image
-                  src="/images/brands/nintendo.png"
-                  alt="nintendo"
-                  width={200}
-                  height={200}
-                />
-             
-            </Link>
-            <figcaption>Nintendo</figcaption>
-          </figure>
-
-          <figure className="border-4 border-black p-5">
-            <Link href="/services/motorola">
-            
-                <Image
-                  src="/images/brands/motorola.png"
-                  alt="motorola"
-                  width={200}
-                  height={200}
-                />
-           
-            </Link>
-            <figcaption>Motorola</figcaption>
+            <figcaption>Unlocks</figcaption>
           </figure>
         </article>
       </main>
