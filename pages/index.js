@@ -57,7 +57,7 @@ export default function Home() {
           <div className="text-center">
             <h1 className="text-6xl tracking-widest">LML Repair</h1>
             <p className="text-3xl my-10">
-              Everything Electronics &amp; More
+              Everything Electronics | More
               <br />
             </p>
 
