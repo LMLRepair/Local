@@ -10,7 +10,7 @@ function Header() {
             alt="logo"
             width={100}
             height={100}
-            className="w-44"
+            className="w-40"
           />
         </Link>
       </div>
@@ -19,19 +19,13 @@ function Header() {
         <Link href="/" className="text-xl cursor-pointer hover:underline">
           Home
         </Link>
-        {/*
+
         <Link
           href="/products"
           className="text-xl cursor-pointer hover:underline"
         >
           Products
         </Link>
-        
-           <Link href="/blog" className="text-xl cursor-pointer hover:underline">
-          Blogs
-        </Link>
-        */}
-
         <Link
           href="/services"
           className="text-xl cursor-pointer hover:underline"

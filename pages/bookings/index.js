@@ -7,8 +7,8 @@ export default function Bookings() {
   return (
     <Layout pageName="Bookings" Description="Bookings">
       <div className="flex flex-col justify-center items-center p-10 bg-white">
-        <h1 className="text-4xl mb-10 tracking-widest">Bookings</h1>
-        <p className="text-md ">Click to select your ideal location:</p>
+        <h1 className="text-4xl  tracking-widest">Bookings</h1>
+        <p className="text-md ">Select your preferred appointment location</p>
 
         <article className="grid gap-5 justify-center text-center p-10">
           <figure className="border-4 border-black p-5">

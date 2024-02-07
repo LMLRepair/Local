@@ -1,27 +1,22 @@
 import Layout from "../../../components/layout";
 import Image from "next/image";
 
-export default function devicebuybackandtradein() {
+export default function Cases() {
   return (
-    <Layout
-      pageName="Device Buyback and Trade-In"
-      Description="Device Buyback and Trade-In"
-    >
+    <Layout pageName="Cases" Description="Cases">
       <main className="container mx-auto p-5">
         <section className="flex gap-10 flex-col justify-center items-center p-5">
-          <h1 className="text-3xl">Device Buyback and Trade-In</h1>
+          <h1 className="text-3xl">Cases</h1>
           <Image
-            src="/images/services/devicebuybackandtradein.png"
-            alt="Device Buyback and Trade-In"
+            src="/images/products/accessories/cases.png"
+            alt="unlocks"
             width={200}
             height={200}
           />
         </section>
         <article className="flex gap-10 justify-center p-10">
           <table className="table-auto border-separate border-spacing-2 border border-black">
-            <caption className="bg-black text-white p-5">
-              Device Buyback and Trade-In
-            </caption>
+            <caption className="bg-black text-white p-5">Cases</caption>
             <thead>
               <tr>
                 <th>Type</th>
@@ -31,8 +26,16 @@ export default function devicebuybackandtradein() {
 
             <tbody>
               <tr>
-                <td>All Types</td>
-                <td>Call Us</td>
+                <td>Clear Case</td>
+                <td>$20</td>
+              </tr>
+              <tr>
+                <td>Magnetic Case</td>
+                <td>$20</td>
+              </tr>
+              <tr>
+                <td>Silicon Case</td>
+                <td>$20</td>
               </tr>
             </tbody>
           </table>

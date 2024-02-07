@@ -7,9 +7,10 @@ export default function Contact() {
   return (
     <Layout pageName="Contact" pageDescription="Contact">
       <main className="flex flex-col justify-center items-center p-10 bg-white">
-        <h1 className="text-4xl tracking-widest mx-auto flex justify-center text-center mb-10">
+        <h1 className="text-4xl tracking-widest mx-auto flex justify-center text-center">
           Contact
         </h1>
+        <p className="text-md ">Select the location you would like to contact</p>
 
         <article className="grid gap-5 justify-center text-center p-10">
             <figure className="border-4 border-black p-5">

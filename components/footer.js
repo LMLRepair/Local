@@ -1,11 +1,11 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 export default function Footer() {
   return (
-    <footer className="mx-auto bg-yellow-300 py-40  ">
-      {/*  
-      <section className="flex gap-5 justify-center items-center mb-5">
-        <Image src="/images/ballard.png" alt="Fa" height={100} width={200} />{' '}
+    <footer className="mx-auto bg-yellow-300 p-20">
+      {/*
+      <section className="flex gap-5 justify-center items-center mb-10">
+        <h1 className="text-4xl tracking-wider w-52">Ballard</h1>
         <Link href="https://g.page/r/CQNIox3az0mJEBA" className="w-10 ">
           <Image
             src="/images/socials/google.png"
@@ -15,7 +15,10 @@ export default function Footer() {
             s
           />
         </Link>
-        <Link href="https://www.yelp.com/biz/lml-repair-seattle" className="w-10 ">
+        <Link
+          href="https://www.yelp.com/biz/lml-repair-seattle"
+          className="w-10 "
+        >
           <Image
             src="/images/socials/yelp.png"
             height={144}
@@ -23,22 +26,43 @@ export default function Footer() {
             alt="Yelp"
           />
         </Link>
-        <Link href="https://www.facebook.com/lmlrepairballard/" className="w-10">
+        <Link
+          href="https://www.facebook.com/lmlrepairballard/"
+          className="w-10"
+        >
           <Image
             src="/images/socials/facebook.png"
             alt="FaceBook"
+            height={144}
+            width={144}
+          />
+        </Link>
+        <Link
+          href=""
+          className="w-10"
+        >
+          <Image
+            src="/images/listings/bing.png"
+            alt="Bing"
+            height={144}
+            width={144}
+          />
+        </Link>
+
+        <Link
+          href=""
+          className="w-10"
+        >
+          <Image
+            src="/images/listings/apple.png"
+            alt="Apple"
             height={144}
             width={144}
           />
         </Link>
       </section>
-      <section className="flex gap-5 justify-center items-center">
-        <Image
-          src="/images/westseattle.png"
-          alt="Fa"
-          height={100}
-          width={200}
-        />
+      <section className="flex gap-5 justify-center items-center my-10">
+      <h1 className="text-4xl tracking-wider w-52">West Seattle</h1>
         <Link href="https://g.page/r/CQNIox3az0mJEBA" className="w-10 ">
           <Image
             src="/images/socials/google.png"
@@ -48,7 +72,10 @@ export default function Footer() {
             s
           />
         </Link>
-        <Link href="https://www.yelp.com/biz/lml-repair-seattle" className="w-10 ">
+        <Link
+          href="https://www.yelp.com/biz/lml-repair-seattle"
+          className="w-10 "
+        >
           <Image
             src="/images/socials/yelp.png"
             height={144}
@@ -56,10 +83,93 @@ export default function Footer() {
             alt="Yelp"
           />
         </Link>
-        <Link href="https://www.facebook.com/lmlrepairwestseattle/" className="w-10">
+        <Link
+          href="https://www.facebook.com/lmlrepairwestseattle/"
+          className="w-10"
+        >
           <Image
             src="/images/socials/facebook.png"
             alt="FaceBook"
+            height={144}
+            width={144}
+          />
+        </Link>
+        <Link
+          href=""
+          className="w-10"
+        >
+          <Image
+            src="/images/listings/bing.png"
+            alt="Bing"
+            height={144}
+            width={144}
+          />
+        </Link>
+
+        <Link
+          href=""
+          className="w-10"
+        >
+          <Image
+            src="/images/listings/apple.png"
+            alt="Apple"
+            height={144}
+            width={144}
+          />
+        </Link>
+      </section>
+      <section className="flex gap-5 justify-center items-center mt-10">
+      <h1 className="text-4xl tracking-wider w-52">North Seattle</h1>
+        <Link href="https://g.page/r/CQNIox3az0mJEBA" className="w-10 ">
+          <Image
+            src="/images/listings/google.png"
+            height={144}
+            width={144}
+            alt="Google"
+            s
+          />
+        </Link>
+        <Link
+          href="https://www.yelp.com/biz/lml-repair-seattle"
+          className="w-10 "
+        >
+          <Image
+            src="/images/listings/yelp.png"
+            height={144}
+            width={144}
+            alt="Yelp"
+          />
+        </Link>
+        <Link
+          href="https://www.facebook.com/lmlrepairwestseattle/"
+          className="w-10"
+        >
+          <Image
+            src="/images/listings/facebook.png"
+            alt="FaceBook"
+            height={144}
+            width={144}
+          />
+        </Link>
+        <Link
+          href=""
+          className="w-10"
+        >
+          <Image
+            src="/images/listings/bing.png"
+            alt="Bing"
+            height={144}
+            width={144}
+          />
+        </Link>
+
+        <Link
+          href=""
+          className="w-10"
+        >
+          <Image
+            src="/images/listings/apple.png"
+            alt="Apple"
             height={144}
             width={144}
           />

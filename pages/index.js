@@ -45,23 +45,20 @@ export default function Home() {
       thumbnail: "/images/mainpics/9.png",
     },
   ];
-  
+
   return (
     <Layout pageName="Home" pageDescription="Home">
-
       <div className="p-10">
         <ImageGallery items={images1} autoPlay="true" />
       </div>
-
-  
 
       <div>
         <div className="bg-yellow-300 flex justify-center items-center p-10">
           <div className="text-center">
             <h1 className="text-6xl tracking-widest">LML Repair</h1>
             <p className="text-3xl my-10">
-              Best Electronic Repair <br />
-              Service In The Greater Seattle Area.
+              Everything Electronics & More
+              <br />
             </p>
 
             <Link
@@ -136,14 +133,6 @@ export default function Home() {
         <div className="elfsight-app-46eba886-4955-417d-9e36-b02ca1a0e69b p-20"></div>
 
         <div className="elfsight-app-21af9976-08a4-410b-ab8c-1a076f700795 p-20"></div>
-
-        <span>
-          <div className="elfsight-app-6023ac63-076a-486b-ae9e-8c00b007ab8e"></div>
-        </span>
-
-        <span>
-          <div className="elfsight-app-f2133ae9-d9ce-43bd-9523-90644adb4c8c"></div>
-        </span>
       </div>
     </Layout>
   );

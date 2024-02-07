@@ -49,6 +49,12 @@ export default function WestSeattle() {
               className=" w-full"
             ></iframe>
           </section>
+
+      
+
+        <span>
+          <div className="elfsight-app-f2133ae9-d9ce-43bd-9523-90644adb4c8c"></div>
+        </span>
         </main>
       </div>
     </Layout>
