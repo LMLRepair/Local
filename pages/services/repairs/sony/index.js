@@ -29,8 +29,7 @@ export default function Sony({data}) {
         </article>
 
         <b className="flex flex-col justify-center items-center p-5 bg-white">
-          Cant find your device repair? Give us a call or text. We never charge
-          for diagnostics.
+          Cant find your device repair? Give us a call or text. 
         </b>
       </main>
     </Layout>
