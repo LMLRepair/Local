@@ -56,16 +56,13 @@ export default function Home() {
         <div className="bg-yellow-300 flex justify-center items-center p-10">
           <div className="text-center">
             <h1 className="text-6xl tracking-widest">LML Repair</h1>
-            <p className="text-3xl my-10">
-              Everything Electronics & More
-              <br />
-            </p>
+            <p className="text-3xl my-10">Choose convenience – choose us!</p>
 
             <Link
               href="/bookings"
               className="text-3xl bg-black p-4 text-white hover:bg-white hover:text-black cursor-pointer"
             >
-              Book Repair
+              Book Now
             </Link>
           </div>
         </div>
