@@ -23,8 +23,6 @@ export default function Services() {
             <figcaption>Repairs</figcaption>
           </figure>
 
- 
-
           {/*
 
          <figure className="border-4 border-black p-5">
@@ -107,7 +105,6 @@ export default function Services() {
             </Link>
             <figcaption>Customizations</figcaption>
           </figure>
-
 
 */}
         </article>

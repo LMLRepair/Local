@@ -1,3 +1,3 @@
-LML Repair | An electronic repair shop I own and run.
+LML Repair | A local chain of electronic repair shops I own and run.
 
 
