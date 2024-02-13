@@ -8,11 +8,14 @@ export default function Ballard() {
           <h1 className="text-4xl mb-10 tracking-widest"> Ballard Bookings</h1>
 
           <iframe
-            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3kTo7HK_Lp_pEZzjAZ1RnGi1cjLDoxVADBEEYlgUntR3fSos0INxENe31UnnZ2D072RsQSklp1?gv=true"
-            height="1500"
-            title="Google Appointments"
-            className="w-full m-5"
+            src="https://squareup.com/appointments/book/89pnd6xdrlisrg/LZ5QN88Z09J85/start"
+            style={{ border: "none" }}
+            aria-hidden="false"
+            title="Square bridge for Setting Appointments"
+            height="1700px"
+            className="w-full mt-5"
           ></iframe>
+
         </div>
       </div>
     </Layout>
