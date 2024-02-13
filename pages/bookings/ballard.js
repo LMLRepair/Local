@@ -1,4 +1,5 @@
 import Layout from "../../components/layout";
+import Script from "next/script";
 
 export default function Ballard() {
   return (
@@ -11,10 +12,12 @@ export default function Ballard() {
             src="https://squareup.com/appointments/book/89pnd6xdrlisrg/LZ5QN88Z09J85/start"
             style={{ border: "none" }}
             aria-hidden="false"
+            frameborder="0"
             title="Square bridge for Setting Appointments"
             height="1700px"
             className="w-full mt-5"
           ></iframe>
+
         </div>
       </div>
     </Layout>

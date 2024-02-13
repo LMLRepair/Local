@@ -1,4 +1,5 @@
 import Layout from "../../components/layout";
+import Script from "next/script";
 
 export default function WestSeattle() {
   return (
@@ -17,6 +18,7 @@ export default function WestSeattle() {
             src="https://squareup.com/appointments/book/89pnd6xdrlisrg/LWQRVGS73Q18V/start"
             style={{ border: "none" }}
             aria-hidden="false"
+            frameborder="0"
             title="Square bridge for Setting Appointments"
             height="1700px"
             className="w-full mt-5"
