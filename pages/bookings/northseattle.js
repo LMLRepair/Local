@@ -13,6 +13,7 @@ export default function NorthSeattle() {
             {" "}
             North Seattle Bookings
           </h1>
+{/*
 
           <iframe
             src="https://squareup.com/appointments/book/89pnd6xdrlisrg/L2KXFBJVXE6H3/start"
@@ -23,6 +24,8 @@ export default function NorthSeattle() {
             height="1700px"
             className="w-full mt-5"
           ></iframe>
+
+  */}
         </div>
       </div>
     </Layout>
