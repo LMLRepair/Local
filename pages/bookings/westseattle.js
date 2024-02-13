@@ -16,7 +16,7 @@ export default function WestSeattle() {
           <iframe
             src="https://squareup.com/appointments/book/89pnd6xdrlisrg/LWQRVGS73Q18V/start"
             title="Square bridge for Setting Appointments"
-            height="1700px"
+            height="1200px"
             className="w-full mt-5"
           />
          {/*
