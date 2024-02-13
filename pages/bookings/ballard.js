@@ -15,7 +15,6 @@ export default function Ballard() {
             height="1700px"
             className="w-full mt-5"
           ></iframe>
-
         </div>
       </div>
     </Layout>
