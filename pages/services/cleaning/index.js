@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function Cleaning() {
   return (
-    <Layout pageName="Device Cleaning" Description="Device Cleaning">
+    <Layout pageName="Cleaning" Description="Cleaning">
       <main className="container mx-auto p-5">
         <section className="flex gap-10 flex-col justify-center items-center p-5">
-          <h1 className="text-3xl">Device Cleaning</h1>
+          <h1 className="text-3xl">Cleaning</h1>
           <Image
             src="/images/services/cleaning.png"
             alt="Cleaning"

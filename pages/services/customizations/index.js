@@ -30,13 +30,13 @@ export default function Customizations() {
             <tbody>
               <tr>
                 <td>Phones Custom Skins </td>
-                <td>$10</td>
-                <td>5 min</td>
+                <td>$??</td>
+                <td>120 min</td>
               </tr>
               <tr>
                 <td>Phones Custom Cases</td>
-                <td>$15</td>
-                <td>10 min</td>
+                <td>$??</td>
+                <td>120 min</td>
               </tr>
           
             </tbody>

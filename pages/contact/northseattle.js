@@ -11,7 +11,7 @@ export default function NorthSeattle() {
     >
       <div className="p-10 bg-white">
         <h1 className="text-4xl tracking-widest mx-auto flex justify-center text-center mb-10">
-          West Seattle Contact
+          North Seattle Contact
         </h1>
 
         <main>
@@ -25,9 +25,9 @@ export default function NorthSeattle() {
               </p>
               <p className="text-lg my-5">
                 <b>Address: </b>
-                3400 Harbor Ave SW STE #332 Seattle, WA 98126 <br />
+                10015 Lake City Way NE STE #231, Seattle, WA 98125 <br />
                 <b>
-                  <small>Use callbox at the elevator or dial 00332 </small>
+                  <small>Use callbox at the elevator or dial 00231 </small>
                 </b>
               </p>
             </div>
@@ -36,18 +36,22 @@ export default function NorthSeattle() {
               src="https://apps.elfsight.com/p/platform.js"
               defer
             ></Script>
-            <div className="elfsight-app-f52470e7-b405-4034-bae9-508e7e2452a9"></div>
+            <div className="elfsight-app-5f780629-a146-4756-8761-d6f427d9ec90"></div>
           </section>
 
           <section className="p-10 bg-white">
             <iframe
-              src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43125.25857266455!2d-122.19073828661517!3d47.50299028009258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490435d141069cd%3A0x8949cfda1da34803!2sEasy%20Mobile%20Iphone%20Repair!5e0!3m2!1sen!2sus!4v1613693916444!5m2!1sen!2sus "
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86029.7856478836!2d-122.41901626540476!3d47.63719469918059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549013a42b28bdbf%3A0xddf67a8bb8f93d1e!2sLML%20Repair%20-%20North%20Seattle!5e0!3m2!1sen!2sso!4v1707896875796!5m2!1sen!2sso"
               height="450 "
               style={{ border: "0px" }}
               aria-hidden="false"
               title="Shop Location"
               className=" w-full"
             ></iframe>
+
+            <span>
+              <div className="elfsight-app-69f51bd3-b95a-4000-a8fb-60479fcccbb8"></div>
+            </span>
           </section>
         </main>
       </div>

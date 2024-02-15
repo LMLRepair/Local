@@ -18,6 +18,7 @@ export default function Bookings() {
                 alt="West Seattle Booking"
                 width={200}
                 height={200}
+                className="border-black border-4"
               />
             </Link>
             <figcaption className="text-2xl">West Seattle</figcaption>
@@ -30,26 +31,25 @@ export default function Bookings() {
                 alt="Ballard Booking"
                 width={200}
                 height={200}
+                className="border-black border-4"
               />
             </Link>
             <figcaption className="text-2xl">Ballard</figcaption>
           </figure>
+
+          <figure className="border-4 border-black p-5">
+            <Link href="/bookings/northseattle">
+              <Image
+                src="/images/northseattle/1.jpeg"
+                alt="North Seattle Booking"
+                width={200}
+                height={200}
+                className="border-black border-4"
+              />
+            </Link>
+            <figcaption className="text-2xl">North Seattle</figcaption>
+          </figure>
         </article>
-
-        {/*
-            <figure className="border-4 border-black p-5">
-              <Link href="/bookings/northseattle">
-                <Image
-                  src="/images/northseattle/1.png"
-                  alt="North Seattle Booking"
-                  width={200}
-                  height={200}
-                />
-              </Link>
-              <figcaption>North Seattle</figcaption>
-            </figure>
-
-          */}
       </div>
     </Layout>
   );
