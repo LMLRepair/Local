@@ -7,8 +7,22 @@ export default function DYI() {
     <Layout pageName="DYI Page" Description="DYI Page">
       <main className="p-5 bg-white">
         <section className="flex flex-col justify-center items-center p-5 bg-white">
-          <h1 className="text-3xl  mb-10">Accessories </h1>
+          <h1 className="text-3xl  mb-10">DYI </h1>
 
+          <section className="flex flex-col justify-center items-center">
+            <div>
+              <Image
+                src={"/images/products/dyi.jpeg"}
+                alt="Macbook pic"
+                width={200}
+                height={200}
+              />
+            </div>
+
+            <article className="text-center p-10">Coming Soon!</article>
+          </section>
+
+          {/* 
           <article className="grid gap-5 justify-center text-center p-10">
             <figure className="border-4 border-black p-5">
               <Link href="/products/repairparts">
@@ -56,7 +70,7 @@ export default function DYI() {
               </Link>
               <figcaption>Cleaning Supplies</figcaption>
             </figure>
-          </article>
+          </article>  */}
         </section>
       </main>
     </Layout>

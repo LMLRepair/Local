@@ -18,7 +18,7 @@ export default function Products({ data }) {
               <figure key={product.index} className="border-4 border-black p-5">
                 <Link href={"/products/" + product.href}>
                   <Image
-                    src={"/images/products/" + product.src + ".png"}
+                    src={"/images/products/" + product.src}
                     alt={product.name}
                     width={200}
                     height={200}
@@ -27,58 +27,6 @@ export default function Products({ data }) {
                 <figcaption>{product.name}</figcaption>
               </figure>
             ))}
-
-       
-            {/*
-
-            <figure className="border-4 border-black p-5">
-              <Link href="/products/devices">
-                <Image
-                  src="/images/products/devices.jpeg"
-                  alt="Devices"
-                  width={200}
-                  height={200}
-                />
-              </Link>
-              <figcaption>Devices</figcaption>
-            </figure>
-
-            <figure className="border-4 border-black p-5">
-              <Link href="/products/gadgets">
-                <Image
-                  src="/images/products/gadgets.jpeg"
-                  alt="unlocks"
-                  width={200}
-                  height={200}
-                />
-              </Link>
-              <figcaption>Gadgets</figcaption>
-            </figure>
-
-            <figure className="border-4 border-black p-5">
-              <Link href="/products/dyi">
-                <Image
-                  src="/images/products/dyi.jpeg"
-                  alt="DYI"
-                  width={200}
-                  height={200}
-                />
-              </Link>
-              <figcaption>DYI Repairs</figcaption>
-            </figure>
-
-            <figure className="border-4 border-black p-5">
-              <Link href="/products/insurance">
-                <Image
-                  src="/images/products/insurance.jpeg"
-                  alt="Insurance"
-                  width={200}
-                  height={200}
-                />
-              </Link>
-              <figcaption>Insurance</figcaption>
-            </figure>
-*/}
           </article>
         </section>
       </main>
@@ -95,7 +43,7 @@ export async function getStaticProps() {
     const data = await db
       .collection("listproduct")
       .find({})
-      .sort({ rank: -1 })
+      .sort({ rank: 1 })
       .toArray();
     console.log("InsideGetStaticProps" + data);
 
