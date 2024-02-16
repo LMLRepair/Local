@@ -3,13 +3,75 @@ import Script from "next/script";
 import Link from "next/link";
 import Image from "next/image";
 
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+
 export default function Ballard() {
+  const images1 = [
+    {
+      original: "/images/ballard/1.png",
+      thumbnail: "/images/ballard/1.png",
+    },
+    {
+      original: "/images/ballard/2.png",
+      thumbnail: "/images/ballard/2.png",
+    },
+    {
+      original: "/images/ballard/3.png",
+      thumbnail: "/images/ballard/3.png",
+    },
+    {
+      original: "/images/ballard/4.png",
+      thumbnail: "/images/ballard/4.png",
+    },
+    {
+      original: "/images/ballard/5.png",
+      thumbnail: "/images/ballard/5.png",
+    },
+    {
+      original: "/images/ballard/6.png",
+      thumbnail: "/images/ballard/6.png",
+    },
+    {
+      original: "/images/ballard/7.png",
+      thumbnail: "/images/ballard/7.png",
+    },
+    {
+      original: "/images/ballard/8.png",
+      thumbnail: "/images/ballard/8.png",
+    },
+    {
+      original: "/images/ballard/9.png",
+      thumbnail: "/images/ballard/9.png",
+    },
+    ,
+    {
+      original: "/images/ballard/10.png",
+      thumbnail: "/images/ballard/10.png",
+    },
+    {
+      original: "/images/ballard/11.png",
+      thumbnail: "/images/ballard/11.png",
+    },
+    ,
+    {
+      original: "/images/ballard/12.png",
+      thumbnail: "/images/ballard/12.png",
+    },
+    {
+      original: "/images/ballard/13.png",
+      thumbnail: "/images/ballard/13.png",
+    },
+  ];
   return (
     <Layout pageName="Ballard Contact" pageDescription="Ballard Contact">
       <div className="p-10 bg-white">
         <h1 className="text-4xl tracking-widest mx-auto flex justify-center text-center mb-10">
           Ballard Contact
         </h1>
+        <div className="p-10">
+          <ImageGallery items={images1} autoPlay="true" />
+        </div>
 
         <main>
           <section className=" p-14 flex flex-row flex-wrap  justify-between items-center">
@@ -45,10 +107,10 @@ export default function Ballard() {
               className=" w-full"
             ></iframe>
           </section>
-        
-        <span>
-          <div className="elfsight-app-f2133ae9-d9ce-43bd-9523-90644adb4c8c"></div>
-        </span>
+
+          <span>
+            <div className="elfsight-app-f2133ae9-d9ce-43bd-9523-90644adb4c8c"></div>
+          </span>
         </main>
       </div>
     </Layout>

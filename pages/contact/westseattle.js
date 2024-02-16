@@ -3,7 +3,49 @@ import Script from "next/script";
 import Link from "next/link";
 import Image from "next/image";
 
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+
 export default function WestSeattle() {
+  const images1 = [
+    {
+      original: "/images/westseattle/1.png",
+      thumbnail: "/images/westseattle/1.png",
+    },
+    {
+      original: "/images/westseattle/2.png",
+      thumbnail: "/images/westseattle/2.png",
+    },
+    {
+      original: "/images/westseattle/3.png",
+      thumbnail: "/images/westseattle/3.png",
+    },
+    {
+      original: "/images/westseattle/4.png",
+      thumbnail: "/images/westseattle/4.png",
+    },
+    {
+      original: "/images/westseattle/5.png",
+      thumbnail: "/images/westseattle/5.png",
+    },
+    {
+      original: "/images/westseattle/6.png",
+      thumbnail: "/images/westseattle/6.png",
+    },
+    {
+      original: "/images/westseattle/7.png",
+      thumbnail: "/images/westseattle/7.png",
+    },
+    {
+      original: "/images/westseattle/8.png",
+      thumbnail: "/images/westseattle/8.png",
+    },
+    {
+      original: "/images/westseattle/9.png",
+      thumbnail: "/images/westseattle/9.png",
+    },
+  ];
+
   return (
     <Layout
       pageName="West Seattle Contact"
@@ -13,6 +55,10 @@ export default function WestSeattle() {
         <h1 className="text-4xl tracking-widest mx-auto flex justify-center text-center mb-10">
           West Seattle Contact
         </h1>
+
+        <div className="p-10">
+          <ImageGallery items={images1} autoPlay="true" />
+        </div>
 
         <main>
           <section className=" p-14 flex flex-row flex-wrap  justify-between items-center">
@@ -50,11 +96,9 @@ export default function WestSeattle() {
             ></iframe>
           </section>
 
-      
-
-        <span>
-          <div className="elfsight-app-6023ac63-076a-486b-ae9e-8c00b007ab8e"></div>
-        </span>
+          <span>
+            <div className="elfsight-app-6023ac63-076a-486b-ae9e-8c00b007ab8e"></div>
+          </span>
         </main>
       </div>
     </Layout>

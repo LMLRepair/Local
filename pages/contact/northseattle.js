@@ -3,7 +3,36 @@ import Script from "next/script";
 import Link from "next/link";
 import Image from "next/image";
 
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+
 export default function NorthSeattle() {
+  const images1 = [
+    {
+      original: "/images/northseattle/1.jpeg",
+      thumbnail: "/images/northseattle/1.jpeg",
+    },
+    {
+      original: "/images/northseattle/2.jpeg",
+      thumbnail: "/images/northseattle/2.jpeg",
+    },
+    {
+      original: "/images/northseattle/3.jpeg",
+      thumbnail: "/images/northseattle/3.jpeg",
+    },
+    {
+      original: "/images/northseattle/4.jpeg",
+      thumbnail: "/images/northseattle/4.jpeg",
+    },
+    {
+      original: "/images/northseattle/5.jpeg",
+      thumbnail: "/images/northseattle/5.jpeg",
+    },
+    {
+      original: "/images/northseattle/6.jpeg",
+      thumbnail: "/images/northseattle/6.jpeg",
+    },
+  ];
   return (
     <Layout
       pageName="North Seattle Contact"
@@ -13,6 +42,9 @@ export default function NorthSeattle() {
         <h1 className="text-4xl tracking-widest mx-auto flex justify-center text-center mb-10">
           North Seattle Contact
         </h1>
+        <div className="p-10">
+          <ImageGallery items={images1} autoPlay="true" />
+        </div>
 
         <main>
           <section className=" p-14 flex flex-row flex-wrap  justify-between items-center">
