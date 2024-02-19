@@ -46,6 +46,29 @@ export default function Home() {
     },
   ];
 
+  const images2 = [
+    {
+      original: "/images/ads/1.jpg",
+      thumbnail: "/images/ads/1.jpg",
+    },
+    {
+      original: "/images/ads/2.jpg",
+      thumbnail: "/images/ads/2.jpg",
+    },
+    {
+      original: "/images/ads/3.jpg",
+      thumbnail: "/images/ads/3.jpg",
+    },
+    {
+      original: "/images/ads/4.jpg",
+      thumbnail: "/images/ads/4.jpg",
+    },
+    {
+      original: "/images/ads/5.jpg",
+      thumbnail: "/images/ads/5.jpg",
+    },
+  ];
+
   return (
     <Layout pageName="Home" pageDescription="Home">
       <div className="p-10">
@@ -127,6 +150,10 @@ export default function Home() {
           </p>
         </div>
 
+        <div className="p-10">
+          <ImageGallery items={images2} autoPlay="true" />
+        </div>
+        
         <div className="elfsight-app-46eba886-4955-417d-9e36-b02ca1a0e69b p-20"></div>
 
         <div className="elfsight-app-21af9976-08a4-410b-ab8c-1a076f700795 p-20"></div>
