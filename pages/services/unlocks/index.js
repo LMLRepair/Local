@@ -26,11 +26,7 @@ export default function Unlocks() {
             </thead>
 
             <tbody>
-              <tr>
-                <td>ICloud</td>
-                <td>$200</td>
-                <td>120 min</td>
-              </tr>
+            
               <tr>
                 <td>Carier</td>
                 <td>$150</td>
