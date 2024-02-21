@@ -96,6 +96,57 @@ export default function WestSeattle() {
             ></iframe>
           </section>
 
+          <section className="flex gap-10 justify-center items-center border-t-4 border-black p-5 ">
+            <Link href="https://g.page/r/CQNIox3az0mJEBA" className="w-30 ">
+              <Image
+                src="/images/socials/google.png"
+                height={144}
+                width={144}
+                alt="Google"
+                s
+              />
+            </Link>
+            <Link
+              href="https://www.yelp.com/biz/lml-repair-seattle"
+              className="w-30 "
+            >
+              <Image
+                src="/images/socials/yelp.png"
+                height={144}
+                width={144}
+                alt="Yelp"
+              />
+            </Link>
+            <Link
+              href="https://www.facebook.com/lmlrepairwestseattle/"
+              className="w-30"
+            >
+              <Image
+                src="/images/socials/facebook.png"
+                alt="FaceBook"
+                height={144}
+                width={144}
+              />
+            </Link>
+            <Link href="https://www.bing.com/maps?osid=d02515d8-a8d9-4184-9cbd-a874b9d8e1c0&cp=47.572791~-122.375851&lvl=16&pi=0&imgid=73a3bdda-d814-496c-abdb-5d354be444c1&v=2&sV=2&form=S00027" className="w-30">
+              <Image
+                src="/images/listings/bing.png"
+                alt="Bing"
+                height={144}
+                width={144}
+              />
+            </Link>
+
+            <Link href="https://maps.apple.com/?address=3400%20Harbor%20Ave%20SW,%20Unit%20332,%20Seattle,%20WA%20%2098126,%20United%20States&auid=4668742424166868931&ll=47.572711,-122.370431&lsp=9902&q=LML%20Repair" className="w-30">
+              <Image
+                src="/images/listings/apple.png"
+                alt="Apple"
+                height={144}
+                width={144}
+              />
+            </Link>
+          </section>
+
           <span>
             <div className="elfsight-app-6023ac63-076a-486b-ae9e-8c00b007ab8e"></div>
           </span>

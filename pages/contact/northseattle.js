@@ -70,7 +70,6 @@ export default function NorthSeattle() {
             ></Script>
             <div className="elfsight-app-5f780629-a146-4756-8761-d6f427d9ec90"></div>
           </section>
-
           <section className="p-10 bg-white">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86029.7856478836!2d-122.41901626540476!3d47.63719469918059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549013a42b28bdbf%3A0xddf67a8bb8f93d1e!2sLML%20Repair%20-%20North%20Seattle!5e0!3m2!1sen!2sso!4v1707896875796!5m2!1sen!2sso"
@@ -80,11 +79,60 @@ export default function NorthSeattle() {
               title="Shop Location"
               className=" w-full"
             ></iframe>
+          </section>{" "}
+          <section className="flex gap-10 justify-center items-center border-t-4 border-black p-5 ">
+            <Link href="https://g.page/r/CQNIox3az0mJEBA" className="w-30 ">
+              <Image
+                src="/images/listings/google.png"
+                height={144}
+                width={144}
+                alt="Google"
+                s
+              />
+            </Link>
+            <Link
+              href="https://www.yelp.com/biz/lml-repair-seattle"
+              className="w-30 "
+            >
+              <Image
+                src="/images/listings/yelp.png"
+                height={144}
+                width={144}
+                alt="Yelp"
+              />
+            </Link>
+            <Link
+              href="https://www.facebook.com/lmlrepairwestseattle/"
+              className="w-30"
+            >
+              <Image
+                src="/images/listings/facebook.png"
+                alt="FaceBook"
+                height={144}
+                width={144}
+              />
+            </Link>
+            <Link href="" className="w-30">
+              <Image
+                src="/images/listings/bing.png"
+                alt="Bing"
+                height={144}
+                width={144}
+              />
+            </Link>
 
-            <span>
-              <div className="elfsight-app-69f51bd3-b95a-4000-a8fb-60479fcccbb8"></div>
-            </span>
+            <Link href="" className="w-30">
+              <Image
+                src="/images/listings/apple.png"
+                alt="Apple"
+                height={144}
+                width={144}
+              />
+            </Link>
           </section>
+          <span>
+            <div className="elfsight-app-69f51bd3-b95a-4000-a8fb-60479fcccbb8"></div>
+          </span>
         </main>
       </div>
     </Layout>

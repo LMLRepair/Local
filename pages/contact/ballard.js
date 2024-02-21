@@ -108,6 +108,57 @@ export default function Ballard() {
             ></iframe>
           </section>
 
+          <section className="flex gap-10 justify-center items-center border-t-4 border-black p-5 ">
+            <Link href="https://g.page/r/CQNIox3az0mJEBA" className="w-30 ">
+              <Image
+                src="/images/socials/google.png"
+                height={144}
+                width={144}
+                alt="Google"
+                s
+              />
+            </Link>
+            <Link
+              href="https://www.yelp.com/biz/lml-repair-seattle"
+              className="w-30 "
+            >
+              <Image
+                src="/images/socials/yelp.png"
+                height={144}
+                width={144}
+                alt="Yelp"
+              />
+            </Link>
+            <Link
+              href="https://www.facebook.com/lmlrepairballard/"
+              className="w-30"
+            >
+              <Image
+                src="/images/socials/facebook.png"
+                alt="FaceBook"
+                height={144}
+                width={144}
+              />
+            </Link>
+            <Link href="" className="w-30">
+              <Image
+                src="/images/listings/bing.png"
+                alt="Bing"
+                height={144}
+                width={144}
+              />
+            </Link>
+
+            <Link href="" className="w-30">
+              <Image
+                src="/images/listings/apple.png"
+                alt="Apple"
+                height={144}
+                width={144}
+              />
+            </Link>
+          </section>
+
           <span>
             <div className="elfsight-app-f2133ae9-d9ce-43bd-9523-90644adb4c8c"></div>
           </span>
