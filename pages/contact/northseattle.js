@@ -80,8 +80,8 @@ export default function NorthSeattle() {
               className=" w-full"
             ></iframe>
           </section>{" "}
-          <section className="flex gap-10 justify-center items-center border-t-4 border-black p-5 ">
-            <Link href="https://g.page/r/CQNIox3az0mJEBA" className="w-30 ">
+          <section className="flex gap-5 justify-center items-center border-t-8 border-black p-5 ">
+            <Link href="https://maps.app.goo.gl/1rcWCz2NDDPye4s59" className="w-30 ">
               <Image
                 src="/images/listings/google.png"
                 height={144}
@@ -91,7 +91,7 @@ export default function NorthSeattle() {
               />
             </Link>
             <Link
-              href="https://www.yelp.com/biz/lml-repair-seattle"
+              href="https://www.yelp.com/biz/lml-repair-north-seattle-seattle"
               className="w-30 "
             >
               <Image
@@ -102,7 +102,7 @@ export default function NorthSeattle() {
               />
             </Link>
             <Link
-              href="https://www.facebook.com/lmlrepairwestseattle/"
+              href="https://www.facebook.com/lmlrepairnorthseattle/"
               className="w-30"
             >
               <Image
@@ -112,6 +112,7 @@ export default function NorthSeattle() {
                 width={144}
               />
             </Link>
+            {/*
             <Link href="" className="w-30">
               <Image
                 src="/images/listings/bing.png"
@@ -129,6 +130,7 @@ export default function NorthSeattle() {
                 width={144}
               />
             </Link>
+            */}
           </section>
           <span>
             <div className="elfsight-app-69f51bd3-b95a-4000-a8fb-60479fcccbb8"></div>

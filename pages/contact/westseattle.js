@@ -96,7 +96,7 @@ export default function WestSeattle() {
             ></iframe>
           </section>
 
-          <section className="flex gap-10 justify-center items-center border-t-4 border-black p-5 ">
+          <section className="flex gap-5 justify-center items-center border-t-8 border-black p-5 ">
             <Link href="https://g.page/r/CQNIox3az0mJEBA" className="w-30 ">
               <Image
                 src="/images/socials/google.png"

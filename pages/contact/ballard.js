@@ -108,8 +108,8 @@ export default function Ballard() {
             ></iframe>
           </section>
 
-          <section className="flex gap-10 justify-center items-center border-t-4 border-black p-5 ">
-            <Link href="https://g.page/r/CQNIox3az0mJEBA" className="w-30 ">
+          <section className="flex gap-5 justify-center items-center border-t-8 border-black p-5 ">
+            <Link href="https://maps.app.goo.gl/6bRygwNKJPJZWEA89" className="w-30 ">
               <Image
                 src="/images/socials/google.png"
                 height={144}
@@ -119,7 +119,7 @@ export default function Ballard() {
               />
             </Link>
             <Link
-              href="https://www.yelp.com/biz/lml-repair-seattle"
+              href="https://www.yelp.com/biz/lml-repair-ballard-seattle"
               className="w-30 "
             >
               <Image
@@ -140,7 +140,7 @@ export default function Ballard() {
                 width={144}
               />
             </Link>
-            <Link href="" className="w-30">
+            <Link href="https://www.bing.com/maps?osid=1defbcd7-7c40-4e95-8390-8cb28790a2b8&cp=47.658002~-122.370615&lvl=16&pi=0&imgid=19af23cf-69a8-4c00-afe1-0ac88f5943cf&v=2&sV=2&form=S00027" className="w-30">
               <Image
                 src="/images/listings/bing.png"
                 alt="Bing"
@@ -149,7 +149,7 @@ export default function Ballard() {
               />
             </Link>
 
-            <Link href="" className="w-30">
+            <Link href="https://maps.apple.com/?address=700%20NW%2042nd%20St,%20Unit%20333,%20Seattle,%20WA%20%2098107,%20United%20States&auid=10641286915098776632&ll=47.657930,-122.365284&lsp=9902&q=LML%20Repair" className="w-30">
               <Image
                 src="/images/listings/apple.png"
                 alt="Apple"
