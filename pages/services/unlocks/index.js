@@ -28,7 +28,7 @@ export default function Unlocks() {
             <tbody>
             
               <tr>
-                <td>Carier</td>
+                <td>Carrier</td>
                 <td>$150</td>
                 <td>80 min</td>
               </tr>

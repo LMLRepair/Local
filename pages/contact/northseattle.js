@@ -121,8 +121,8 @@ export default function NorthSeattle() {
                 width={144}
               />
             </Link>
-
-            <Link href="" className="w-30">
+   */}
+            <Link href="https://maps.apple.com/?address=10015%20Lake%20City%20Way%20NE,%20Unit%20231,%20Seattle,%20WA%20%2098125,%20United%20States&auid=993656464279273777&ll=47.701755,-122.302655&lsp=9902&q=LML%20Repair" className="w-30">
               <Image
                 src="/images/listings/apple.png"
                 alt="Apple"
@@ -130,7 +130,7 @@ export default function NorthSeattle() {
                 width={144}
               />
             </Link>
-            */}
+         
           </section>
           <span>
             <div className="elfsight-app-69f51bd3-b95a-4000-a8fb-60479fcccbb8"></div>
