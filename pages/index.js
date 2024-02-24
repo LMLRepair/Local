@@ -133,10 +133,10 @@ export default function Home() {
             Knowledgeable, passionate service from qualified and trained
             experts. Most LML repairs are completed within 30 minutes.
           </p>
-          <h1 className="text-2xl font-bold">AFFORDABLE WARRANTY PLANS</h1>
+          <h1 className="text-2xl font-bold">60 DAY WARRANTY</h1>
           <p className="text-lg my-5">
-            All repairs come with a multitude of afforable warranty plans for
-            your peace of mind.
+          All repairs come with a 60 day Warranty for your peace of mind
+
           </p>
           {/* <small className="text-sm my-5">No Refunds</small>*/}
           <h1 className="text-2xl font-bold">BEST REPAIR SERVICE IN SEATTLE</h1>
