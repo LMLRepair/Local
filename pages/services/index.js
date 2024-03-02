@@ -17,9 +17,9 @@ export default function Services({ data }) {
         <article className="grid gap-5 justify-center text-center p-10">
           {data.map((service) => (
             <figure key={service.index} className="border-4 border-black p-5">
-              <Link href={"/services/" + service.href}>
+              <Link href={"/services/" + service.url}>
                 <Image
-                  src={"/images/services/" + service.src + ".png"}
+                  src={"/images/services/" + service.image + ".png"}
                   alt={service.name}
                   width={200}
                   height={200}

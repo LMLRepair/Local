@@ -44,7 +44,7 @@ export default function Contact() {
           <figure className="border-4 border-black p-5">
             <Link href="/contact/northseattle">
               <Image
-                src="/images/northseattle/1.jpeg"
+                src="/images/northseattle/1.png"
                 alt="North Seattle Contact"
                 width={200}
                 height={200}

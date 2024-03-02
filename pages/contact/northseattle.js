@@ -9,28 +9,28 @@ import "react-image-gallery/styles/css/image-gallery.css";
 export default function NorthSeattle() {
   const images1 = [
     {
-      original: "/images/northseattle/1.jpeg",
-      thumbnail: "/images/northseattle/1.jpeg",
+      original: "/images/northseattle/1.png",
+      thumbnail: "/images/northseattle/1.png",
     },
     {
-      original: "/images/northseattle/2.jpeg",
-      thumbnail: "/images/northseattle/2.jpeg",
+      original: "/images/northseattle/2.png",
+      thumbnail: "/images/northseattle/2.png",
     },
     {
-      original: "/images/northseattle/3.jpeg",
-      thumbnail: "/images/northseattle/3.jpeg",
+      original: "/images/northseattle/3.png",
+      thumbnail: "/images/northseattle/3.png",
     },
     {
-      original: "/images/northseattle/4.jpeg",
-      thumbnail: "/images/northseattle/4.jpeg",
+      original: "/images/northseattle/4.png",
+      thumbnail: "/images/northseattle/4.png",
     },
     {
-      original: "/images/northseattle/5.jpeg",
-      thumbnail: "/images/northseattle/5.jpeg",
+      original: "/images/northseattle/5.png",
+      thumbnail: "/images/northseattle/5.png",
     },
     {
-      original: "/images/northseattle/6.jpeg",
-      thumbnail: "/images/northseattle/6.jpeg",
+      original: "/images/northseattle/6.png",
+      thumbnail: "/images/northseattle/6.png",
     },
   ];
   return (
@@ -81,7 +81,10 @@ export default function NorthSeattle() {
             ></iframe>
           </section>{" "}
           <section className="flex gap-5 justify-center items-center border-t-8 border-black p-5 ">
-            <Link href="https://maps.app.goo.gl/1rcWCz2NDDPye4s59" className="w-30 ">
+            <Link
+              href="https://maps.app.goo.gl/1rcWCz2NDDPye4s59"
+              className="w-30 "
+            >
               <Image
                 src="/images/listings/google.png"
                 height={144}
@@ -112,8 +115,11 @@ export default function NorthSeattle() {
                 width={144}
               />
             </Link>
-            {/*
-            <Link href="" className="w-30">
+
+            <Link
+              href="https://www.bing.com/maps?osid=71598303-2ca9-4b13-a465-8b668f1cdf11&cp=47.701734~-122.415178&lvl=11.58&pi=0&v=2&sV=2&form=S00027"
+              className="w-30"
+            >
               <Image
                 src="/images/listings/bing.png"
                 alt="Bing"
@@ -121,8 +127,11 @@ export default function NorthSeattle() {
                 width={144}
               />
             </Link>
-   */}
-            <Link href="https://maps.apple.com/?address=10015%20Lake%20City%20Way%20NE,%20Unit%20231,%20Seattle,%20WA%20%2098125,%20United%20States&auid=993656464279273777&ll=47.701755,-122.302655&lsp=9902&q=LML%20Repair" className="w-30">
+
+            <Link
+              href="https://maps.apple.com/?address=10015%20Lake%20City%20Way%20NE,%20Unit%20231,%20Seattle,%20WA%20%2098125,%20United%20States&auid=993656464279273777&ll=47.701755,-122.302655&lsp=9902&q=LML%20Repair"
+              className="w-30"
+            >
               <Image
                 src="/images/listings/apple.png"
                 alt="Apple"
@@ -130,7 +139,6 @@ export default function NorthSeattle() {
                 width={144}
               />
             </Link>
-         
           </section>
           <span>
             <div className="elfsight-app-69f51bd3-b95a-4000-a8fb-60479fcccbb8"></div>
