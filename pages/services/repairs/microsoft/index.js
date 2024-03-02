@@ -13,9 +13,9 @@ export default function Apple({data}) {
         <article className="grid grid-cols-2 gap-10 content-center items-center text-center justify-items-center p-10">
           {data.map((microsoft) => (
             <figure key={microsoft.index} className="border-4 border-black p-5">
-              <Link href={"/services/repairs/microsoft/" + microsoft.href}>
+              <Link href={"/services/repairs/microsoft/" + microsoft.url}>
                 <Image
-                  src={"/images/services/repairs/microsoft/" + microsoft.src}
+                  src={"/images/services/repairs/microsoft/" + microsoft.image}
                   alt={microsoft.category}
                   width={200}
                   height={200}

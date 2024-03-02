@@ -13,9 +13,9 @@ export default function S({ data }) {
         <article className="grid grid-cols-2 gap-10 content-center items-center text-center justify-items-center p-10">
           {data.map((s) => (
             <figure key={s.index} className="border-4 border-black p-5">
-              <Link href={"/services/repairs/samsung/galaxys/" + s.href}>
+              <Link href={"/services/repairs/samsung/galaxys/" + s.url}>
                 <Image
-                  src={"/images/services/repairs/samsung/galaxys/" + s.src}
+                  src={"/images/services/repairs/samsung/galaxys/" + s.image}
                   alt={s.series}
                   width={200}
                   height={200}

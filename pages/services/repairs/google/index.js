@@ -13,9 +13,9 @@ export default function Google({ data }) {
         <article className=" flex flex-col justify-center items-center text-center  p-10">
           {data.map((google) => (
             <figure key={google.index} className="border-4 border-black p-5">
-              <Link href={"/services/repairs/google/" + google.href}>
+              <Link href={"/services/repairs/google/" + google.url}>
                 <Image
-                  src={"/images/services/repairs/google/" + google.src}
+                  src={"/images/services/repairs/google/" + google.image}
                   alt={google.category}
                   width={200}
                   height={200}

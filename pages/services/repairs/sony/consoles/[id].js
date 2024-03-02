@@ -1,23 +1,23 @@
-import Layout from '../../../../components/layout';
-import clientPromise from '../../../../lib/mongodb';
+import Layout from '../../../../../components/layout';
+import clientPromise from '../../../../../lib/mongodb';
 import Image from 'next/image';
 
-export default function Id({son}) {
-  const sonInfo = [];
-  let person = son[0].repairs;
+export default function Id({con}) {
+  const Info = [];
+  let person = con[0].repairs;
 
   for (let x in person) {
-    sonInfo.push(person[x]);
+    Info.push(person[x]);
   }
 
   return (
-    <Layout pageName={son[0].model} Description={son[0].description}>
+    <Layout pageName={con[0].model} Description={con[0].description}>
       <main className="container mx-auto p-5">
         <section className="flex gap-10 flex-col justify-center items-center p-5">
-          <h1 className="text-3xl">{son[0].model}</h1>
+          <h1 className="text-3xl">{con[0].model}</h1>
           <Image
-            src={'/images/services/repairs/sony/' + son[0].src}
-            alt={son[0].model}
+            src={'/images/services/repairs/sony/' + con[0].image}
+            alt={con[0].model}
             width={200}
             height={200}
           />
@@ -25,7 +25,7 @@ export default function Id({son}) {
         <article className="flex gap-10 justify-center p-10">
           <table className="table-auto border-separate border-spacing-2 border border-black">
             <caption className="bg-black text-white p-5">
-              {son[0].model}
+              {con[0].model}
             </caption>
             <thead>
               <tr>
@@ -35,7 +35,7 @@ export default function Id({son}) {
               </tr>
             </thead>
             <tbody>
-              {sonInfo.map((p) => {
+              {Info.map((p) => {
                 return (
                   <tr key={p.name}>
                     <td>{p.name}</td>
@@ -52,38 +52,19 @@ export default function Id({son}) {
   );
 }
 
-export async function getStaticPaths() {
-  const client = await clientPromise;
-  const db = client.db('sony');
 
-  let data = await db.collection('listconsole').find({}).toArray();
-  data = JSON.parse(JSON.stringify(data));
 
-  const paths = data.map((d) => {
-    return {
-      params: {
-        id: d.href,
-      },
-    };
-  });
-
-  return {
-    paths,
-    fallback: false,
-  };
-}
-
-export async function getStaticProps({params}) {
+export async function getServerSideProps({params}) {
   // Fetch necessary data for the blog post using params.id
   const client = await clientPromise;
   const db = client.db('sony');
 
-  let data = await db.collection('console').find({href: params.id}).toArray();
+  let data = await db.collection('console').find({url: params.id}).toArray();
   data = JSON.parse(JSON.stringify(data));
 
   return {
     props: {
-      son: data,
+      con: data,
     },
   };
 }

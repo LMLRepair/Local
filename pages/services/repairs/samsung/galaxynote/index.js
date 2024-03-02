@@ -13,10 +13,10 @@ export default function note({data}) {
         <article className="grid grid-cols-2 gap-10 content-center items-center text-center justify-items-center p-10">
           {data.map((note) => (
             <figure key={note.index} className="border-4 border-black p-5">
-              <Link href={'/services/repairs/samsung/galaxynote/' + note.href}>
+              <Link href={'/services/repairs/samsung/galaxynote/' + note.url}>
              
                   <Image
-                    src={'/images/services/repairs/samsung/galaxynote/' + note.src}
+                    src={'/images/services/repairs/samsung/galaxynote/' + note.image}
                     alt={note.series}
                     width={200}
                     height={200}

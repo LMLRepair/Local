@@ -16,9 +16,9 @@ export default function Repairs({data}) {
           
         {data.map((repair) => (
             <figure key={repair.index} className="border-4 border-black p-5">
-              <Link href={"/services/repairs/" + repair.href}>
+              <Link href={"/services/repairs/" + repair.url}>
                 <Image
-                  src={"/images/services/repairs/" + repair.src + ".png"}
+                  src={"/images/services/repairs/" + repair.image + ".png"}
                   alt={repair.brand}
                   width={200}
                   height={200}

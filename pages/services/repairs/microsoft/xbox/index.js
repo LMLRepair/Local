@@ -13,10 +13,10 @@ export default function xbox({data}) {
         <article className="grid grid-cols-2 gap-10 content-center items-center text-center justify-items-center p-10">
           {data.map((xbox) => (
             <figure key={xbox.index} className="border-4 border-black p-5">
-              <Link href={'/services/repairs/microsoft/xbox/' + xbox.href}>
+              <Link href={'/services/repairs/microsoft/xbox/' + xbox.url}>
               
                   <Image
-                    src={'/images/services/repairs/microsoft/xbox/' + xbox.src}
+                    src={'/images/services/repairs/microsoft/xbox/' + xbox.image}
                     alt={xbox.series}
                     width={200}
                     height={200}

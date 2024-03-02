@@ -1,5 +1,5 @@
-import Layout from '../../../../components/layout';
-import clientPromise from '../../../../lib/mongodb';
+import Layout from '../../../../../components/layout';
+import clientPromise from '../../../../../lib/mongodb';
 import Image from 'next/image';
 
 export default function Id({lg}) {
@@ -16,7 +16,7 @@ export default function Id({lg}) {
         <section className="flex gap-10 flex-col justify-center items-center p-5">
           <h1 className="text-3xl">{lg[0].model}</h1>
           <Image
-            src={'/images/services/repairs/lg/' + lg[0].src}
+            src={'/images/services/repairs/lg/phones/' + lg[0].image}
             alt={lg[0].model}
             width={200}
             height={200}
@@ -46,33 +46,14 @@ export default function Id({lg}) {
   );
 }
 
-export async function getStaticPaths() {
-  const client = await clientPromise;
-  const db = client.db('lg');
 
-  let data = await db.collection('listphone').find({}).toArray();
-  data = JSON.parse(JSON.stringify(data));
 
-  const paths = data.map((d) => {
-    return {
-      params: {
-        id: d.href,
-      },
-    };
-  });
-
-  return {
-    paths,
-    fallback: false,
-  };
-}
-
-export async function getStaticProps({params}) {
+export async function getServerSideProps({params}) {
   // Fetch necessary data for the blog post using params.id
   const client = await clientPromise;
   const db = client.db('lg');
 
-  let data = await db.collection('phone').find({href: params.id}).toArray();
+  let data = await db.collection('phone').find({url: params.id}).toArray();
   data = JSON.parse(JSON.stringify(data));
 
   return {

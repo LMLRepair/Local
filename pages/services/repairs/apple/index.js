@@ -13,9 +13,9 @@ export default function Apple({ data }) {
         <article className="grid grid-cols-2 gap-10 content-center items-center text-center justify-items-center p-10">
           {data.map((apple) => (
             <figure key={apple.index} className="border-4 border-black p-5">
-              <Link href={"/services/repairs/apple/" + apple.href}>
+              <Link href={"/services/repairs/apple/" + apple.url}>
                 <Image
-                  src={"/images/services/repairs/apple/" + apple.src}
+                  src={"/images/services/repairs/apple/" + apple.image}
                   alt={apple.brand}
                   width={200}
                   height={200}

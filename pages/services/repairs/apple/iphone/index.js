@@ -14,10 +14,10 @@ export default function Iphones({data}) {
         <article className="grid grid-cols-2 gap-10 content-center items-center text-center justify-items-center p-10">
           {data.map((iphone) => (
             <figure key={iphone.index} className="border-4 border-black p-5">
-              <Link href={'/services/repairs/apple/iphone/' + iphone.href}>
+              <Link href={'/services/repairs/apple/iphone/' + iphone.url}>
            
                   <Image
-                    src={'/images/services/repairs/apple/iphone/' + iphone.src}
+                    src={'/images/services/repairs/apple/iphone/' + iphone.image}
                     alt={iphone.series}
                     width={200}
                     height={200}

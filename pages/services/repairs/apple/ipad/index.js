@@ -13,10 +13,10 @@ export default function Ipad({data}) {
         <article className="grid grid-cols-2 gap-10 content-center items-center text-center justify-items-center p-10">
           {data.map((ipad) => (
             <figure key={ipad.index} className="border-4 border-black p-5">
-              <Link href={'/services/repairs/apple/ipad/' + ipad.href}>
+              <Link href={'/services/repairs/apple/ipad/' + ipad.url}>
             
                   <Image
-                    src={'/images/services/repairs/apple/ipad/' + ipad.src}
+                    src={'/images/services/repairs/apple/ipad/' + ipad.image}
                     alt={ipad.series}
                     width={200}
                     height={200}

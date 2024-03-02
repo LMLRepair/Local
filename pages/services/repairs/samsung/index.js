@@ -13,9 +13,9 @@ export default function Samsung({ data }) {
         <article className="grid grid-cols-2 gap-10 content-center items-center text-center justify-items-center p-10">
           {data.map((samsung) => (
             <figure key={samsung.index} className="border-4 border-black p-5">
-              <Link href={"/services/repairs/samsung/" + samsung.href}>
+              <Link href={"/services/repairs/samsung/" + samsung.url}>
                 <Image
-                  src={"/images/services/repairs/samsung/" + samsung.src}
+                  src={"/images/services/repairs/samsung/" + samsung.image}
                   alt={samsung.category}
                   width={200}
                   height={200}

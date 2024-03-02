@@ -16,7 +16,7 @@ export default function Id({phone}) {
         <section className="flex gap-10 flex-col justify-center items-center p-5">
           <h1 className="text-3xl">{phone[0].model}</h1>
           <Image
-            src={'/images/services/repairs/samsung/galaxynote/' + phone[0].src}
+            src={'/images/services/repairs/samsung/galaxynote/' + phone[0].image}
             alt={phone[0].model}
             width={200}
             height={200}
@@ -57,35 +57,15 @@ export default function Id({phone}) {
   );
 }
 
-export async function getStaticPaths() {
-  const client = await clientPromise;
-  const db = client.db('samsung');
 
-  let data = await db.collection('listgalaxynote').find({}).toArray();
-  data = JSON.parse(JSON.stringify(data));
-
-  const paths = data.map((d) => {
-    return {
-      params: {
-        id: d.href,
-      },
-    };
-  });
-
-  return {
-    paths,
-    fallback: false,
-  };
-}
-
-export async function getStaticProps({params}) {
+export async function getServerSideProps({params}) {
   // Fetch necessary data for the blog post using params.id
   const client = await clientPromise;
   const db = client.db('samsung');
 
   let data = await db
     .collection('galaxynote')
-    .find({href: params.id})
+    .find({url: params.id})
     .toArray();
   data = JSON.parse(JSON.stringify(data));
 

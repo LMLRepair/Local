@@ -8,22 +8,25 @@ export default function Sony({data}) {
     <Layout pageName="Sony Series" Description="Sony Series Page">
       <main className="p-5 bg-white">
         <section className="flex flex-col justify-center items-center p-5 bg-white">
-          <h1 className="text-3xl">Sony Series</h1>
+          <h1 className="text-3xl">Sony Repairs</h1>
         </section>
-        <article className="grid grid-cols-2 gap-10 content-center items-center text-center justify-items-center p-10">
+
+
+
+        <article className="grid  gap-5 content-center items-center text-center justify-items-center p-10">
           {data.map((son) => (
             <figure key={son.index} className="border-4 border-black p-5">
-              <Link href={'/services/repairs/sony/' + son.href}>
+              <Link href={'/services/repairs/sony/' + son.url}>
                
                   <Image
-                    src={'/images/services/repairs/sony/' + son.src}
-                    alt={son.series}
+                    src={'/images/services/repairs/sony/' + son.image}
+                    alt={son.category}
                     width={200}
                     height={200}
                   />
             
               </Link>
-              <figcaption>{son.series}</figcaption>
+              <figcaption>{son.category}</figcaption>
             </figure>
           ))}
         </article>
@@ -42,7 +45,7 @@ export async function getStaticProps() {
     const db = client.db('sony');
 
     const data = await db
-      .collection('listconsole')
+      .collection('listsony')
       .find({})
       .sort({rank: -1})
       .toArray();

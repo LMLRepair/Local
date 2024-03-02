@@ -1,15 +1,22 @@
 import Layout from "../../../components/layout";
 import Image from "next/image";
+import clientPromise from '../../../lib/mongodb';
+export default function cleaning({cleaning}) {
+  const Info = [];
+  let person = cleaning[0].types;
 
-export default function Cleaning() {
+  for (let x in person) {
+    Info.push(person[x]);
+  }
+
   return (
-    <Layout pageName="Cleaning" Description="Cleaning">
+    <Layout pageName={cleaning[0].name} Description={cleaning[0].description}>
       <main className="container mx-auto p-5">
         <section className="flex gap-10 flex-col justify-center items-center p-5">
-          <h1 className="text-3xl">Cleaning</h1>
+          <h1 className="text-3xl">{cleaning[0].name}</h1>
           <Image
-            src="/images/services/cleaning.png"
-            alt="Cleaning"
+            src={'/images/services/' + cleaning[0].image}
+            alt={cleaning[0].name}
             width={200}
             height={200}
           />
@@ -17,52 +24,47 @@ export default function Cleaning() {
         <article className="flex gap-10 justify-center p-10">
           <table className="table-auto border-separate border-spacing-2 border border-black">
             <caption className="bg-black text-white p-5">
-              Device Cleaning
+              {cleaning[0].name}
             </caption>
             <thead>
               <tr>
-                <th>Service</th>
+                <th>Type</th>
                 <th>Price</th>
-                <th>Time Frame</th>
+                <th>Time</th>
               </tr>
             </thead>
 
             <tbody>
-              <tr>
-                <td>Phones</td>
-                <td>$10</td>
-                <td>5 min</td>
-              </tr>
-              <tr>
-                <td>Laptops</td>
-                <td>$15</td>
-                <td>10 min</td>
-              </tr>
-              <tr>
-                <td>Watches</td>
-                <td>$10</td>
-                <td>5 min</td>
-              </tr>
-              <tr>
-                <td>Tablets</td>
-                <td>$10</td>
-                <td>10 min</td>
-              </tr>
-              <tr>
-                <td>Computers</td>
-                <td>$15</td>
-                <td>15 min</td>
-              </tr>
-              <tr>
-                <td>Consoles</td>
-                <td>$20</td>
-                <td>20 min</td>
-              </tr>
+              {Info.map((p) => {
+                return (
+                  <tr key={p.name}>
+                    <td>{p.name}</td>
+                    <td>{'$' + p.price}</td>
+                    <td>{p.time + ' Mins'}</td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </article>
-    
+      
       </main>
     </Layout>
   );
+}
+
+
+
+export async function getServerSideProps() {
+  const client = await clientPromise;
+  const db = client.db('cleaning');
+
+  let data = await db.collection('cleaning').find().toArray();
+  data = JSON.parse(JSON.stringify(data));
+
+  return {
+    props: {
+      cleaning: data,
+    },
+  };
 }

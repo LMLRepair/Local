@@ -20,11 +20,11 @@ export default function surfacebook({data}) {
               className="border-4 border-black p-5 w-48 flex flex-col justify-center items-center "
             >
               <Link
-                href={'/services/repairs/microsoft/surfacebook/' + surfacebook.href}
+                href={'/services/repairs/microsoft/surfacebook/' + surfacebook.url}
               >
                 
                   <Image
-                    src={'/images/services/repairs/microsoft/surfacebook/' + surfacebook.src}
+                    src={'/images/services/repairs/microsoft/surfacebook/' + surfacebook.image}
                     alt={surfacebook.series}
                     width={400}
                     height={200}

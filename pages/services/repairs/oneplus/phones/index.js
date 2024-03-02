@@ -3,30 +3,33 @@ import Layout from '../../../../../components/layout';
 import Link from 'next/link';
 import clientPromise from '../../../../../lib/mongodb';
 
-export default function Pixel({data}) {
+export default function Oneplus({data}) {
   return (
-    <Layout pageName="Pixel Series" Description="Pixel Series Page">
+    <Layout pageName="Oneplus Series" Description="Oneplus Series Page">
       <main className="p-5 bg-white">
         <section className="flex flex-col justify-center items-center p-5 bg-white">
-          <h1 className="text-3xl">Pixel Series</h1>
+          <h1 className="text-3xl">Phone Series</h1>
         </section>
         <article className="grid grid-cols-2 gap-10 content-center items-center text-center justify-items-center p-10">
-          {data.map((pixel) => (
-            <figure key={pixel.index} className="border-4 border-black p-5">
-              <Link href={'/services/repairs/google/pixel/' + pixel.url}>
-                
+          {data.map((one) => (
+            <figure key={one.index} className="border-4 border-black p-5">
+              <Link href={'/services/repairs/oneplus/phones/' + one.url}>
+             
                   <Image
-                    src={'/images/services/repairs/google/pixel/' + pixel.image}
-                    alt={pixel.series}
+                    src={'/images/services/repairs/oneplus/phones/' + one.image}
+                    alt={one.series}
                     width={200}
                     height={200}
                   />
-                
+           
               </Link>
-              <figcaption>{pixel.series}</figcaption>
+              <figcaption>{one.series}</figcaption>
             </figure>
           ))}
         </article>
+        <b className="flex flex-col justify-center items-center p-5 bg-white">
+          Cant find your device repair? Give us a call or text. 
+        </b>
       </main>
     </Layout>
   );
@@ -35,10 +38,10 @@ export default function Pixel({data}) {
 export async function getStaticProps() {
   try {
     const client = await clientPromise;
-    const db = client.db('google');
+    const db = client.db('oneplus');
 
     const data = await db
-      .collection('listpixel')
+      .collection('listphone')
       .find({})
       .sort({rank: -1})
       .toArray();

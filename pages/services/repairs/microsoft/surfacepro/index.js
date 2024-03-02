@@ -16,10 +16,10 @@ export default function surfacepro({data}) {
               key={surfacepro.index}
               className="border-4 border-black p-5 w-48 flex flex-col justify-center items-center "
             >
-              <Link href={'/services/repairs/microsoft/surfacepro/' + surfacepro.href}>
+              <Link href={'/services/repairs/microsoft/surfacepro/' + surfacepro.url}>
               
                   <Image
-                    src={'/images/services/repairs/microsoft/surfacepro/' + surfacepro.src}
+                    src={'/images/services/repairs/microsoft/surfacepro/' + surfacepro.image}
                     alt={surfacepro.series}
                     width={400}
                     height={200}
