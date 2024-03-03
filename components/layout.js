@@ -26,7 +26,7 @@ export default function Layout({ children, pageName, pageDescription }) {
       </Script>
       <Header />
       {children}
-      <Footer />
+  
       <noscript>Your browser does not have javascript enabled.</noscript>
       <Script
         strategy="afterInteractive"
@@ -37,6 +37,8 @@ export default function Layout({ children, pageName, pageDescription }) {
         className="elfsight-app-9c951605-b822-4186-81dd-2bbbdb4ee14f"
         data-elfsight-app-lazy
       ></div>
+
+          <Footer />
     </div>
   );
 }

@@ -135,8 +135,7 @@ export default function Home() {
           </p>
           <h1 className="text-2xl font-bold">60 DAY WARRANTY</h1>
           <p className="text-lg my-5">
-          All repairs come with a 60 day Warranty for your peace of mind
-
+            All repairs come with a 60 day Warranty for your peace of mind
           </p>
           {/* <small className="text-sm my-5">No Refunds</small>*/}
           <h1 className="text-2xl font-bold">BEST REPAIR SERVICE IN SEATTLE</h1>
@@ -159,6 +158,14 @@ export default function Home() {
         <div className="elfsight-app-21af9976-08a4-410b-ab8c-1a076f700795 p-20"></div>
 
         <div className="elfsight-app-9ea36a6a-a2d4-43b8-9084-5610880cc84f p-20"></div>
+
+<div className="p-20">
+ <div
+          className="elfsight-app-d43fb8ff-6c25-441d-b615-ec47557d68da "
+          data-elfsight-app-lazy
+        ></div>
+</div>
+       
       </div>
     </Layout>
   );
