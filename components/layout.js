@@ -33,6 +33,10 @@ export default function Layout({ children, pageName, pageDescription }) {
         src="https://apps.elfsight.com/p/platform.js"
         defer
       ></Script>
+      <div
+        className="elfsight-app-9c951605-b822-4186-81dd-2bbbdb4ee14f"
+        data-elfsight-app-lazy
+      ></div>
     </div>
   );
 }
