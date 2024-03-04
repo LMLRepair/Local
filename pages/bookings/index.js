@@ -40,7 +40,7 @@ export default function Bookings() {
           <figure className="border-4 border-black p-5">
             <Link href="/bookings/northseattle">
               <Image
-                src="/images/northseattle/1.jpeg"
+                src="/images/northseattle/1.png"
                 alt="North Seattle Booking"
                 width={200}
                 height={200}
