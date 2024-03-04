@@ -159,13 +159,14 @@ export default function Home() {
 
         <div className="elfsight-app-9ea36a6a-a2d4-43b8-9084-5610880cc84f p-20"></div>
 
-<div className="p-20">
- <div
-          className="elfsight-app-d43fb8ff-6c25-441d-b615-ec47557d68da "
-          data-elfsight-app-lazy
-        ></div>
-</div>
-       
+        <div className="p-20">
+          <div
+            className="elfsight-app-d43fb8ff-6c25-441d-b615-ec47557d68da "
+            data-elfsight-app-lazy
+          ></div>
+        </div>
+
+      
       </div>
     </Layout>
   );
