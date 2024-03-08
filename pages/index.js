@@ -7,73 +7,12 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 export default function Home() {
-  const images1 = [
-    {
-      original: "/images/mainpics/1.png",
-      thumbnail: "/images/mainpics/1.png",
-    },
-    {
-      original: "/images/mainpics/2.png",
-      thumbnail: "/images/mainpics/2.png",
-    },
-    {
-      original: "/images/mainpics/3.png",
-      thumbnail: "/images/mainpics/3.png",
-    },
-    {
-      original: "/images/mainpics/4.png",
-      thumbnail: "/images/mainpics/4.png",
-    },
-    {
-      original: "/images/mainpics/5.png",
-      thumbnail: "/images/mainpics/5.png",
-    },
-    {
-      original: "/images/mainpics/6.png",
-      thumbnail: "/images/mainpics/6.png",
-    },
-    {
-      original: "/images/mainpics/7.png",
-      thumbnail: "/images/mainpics/7.png",
-    },
-    {
-      original: "/images/mainpics/8.png",
-      thumbnail: "/images/mainpics/8.png",
-    },
-    {
-      original: "/images/mainpics/9.png",
-      thumbnail: "/images/mainpics/9.png",
-    },
-  ];
-
-  const images2 = [
-    {
-      original: "/images/ads/1.jpg",
-      thumbnail: "/images/ads/1.jpg",
-    },
-    {
-      original: "/images/ads/2.jpg",
-      thumbnail: "/images/ads/2.jpg",
-    },
-    {
-      original: "/images/ads/3.jpg",
-      thumbnail: "/images/ads/3.jpg",
-    },
-    {
-      original: "/images/ads/4.jpg",
-      thumbnail: "/images/ads/4.jpg",
-    },
-    {
-      original: "/images/ads/5.jpg",
-      thumbnail: "/images/ads/5.jpg",
-    },
-  ];
-
   return (
     <Layout pageName="Home" pageDescription="Home">
-      <div className="p-10">
-        <ImageGallery items={images1} autoPlay="true" />
-      </div>
+      <div
+        className="elfsight-app-88538ad3-00be-4dd0-992c-cec6654e9d2a"
+        data-elfsight-app-lazy
+      ></div>
 
       <div>
         <div className="bg-yellow-300 flex justify-center items-center p-10">
@@ -149,10 +88,6 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="p-10">
-          <ImageGallery items={images2} autoPlay="true" />
-        </div>
-
         <div className="elfsight-app-46eba886-4955-417d-9e36-b02ca1a0e69b p-20"></div>
 
         <div className="elfsight-app-21af9976-08a4-410b-ab8c-1a076f700795 p-20"></div>
@@ -165,8 +100,6 @@ export default function Home() {
             data-elfsight-app-lazy
           ></div>
         </div>
-
-      
       </div>
     </Layout>
   );
