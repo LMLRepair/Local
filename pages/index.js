@@ -1,10 +1,6 @@
-import Image from "next/image";
 import Layout from "../components/layout";
 import Link from "next/link";
 
-// here is the new carousel
-import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css";
 
 export default function Home() {
   return (
