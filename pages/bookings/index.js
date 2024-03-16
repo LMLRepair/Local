@@ -25,16 +25,16 @@ export default function Bookings() {
           </figure>
 
           <figure className="border-4 border-black p-5">
-            <Link href="/bookings/ballard">
+            <Link href="/bookings/seattle">
               <Image
-                src="/images/ballard/1.png"
-                alt="Ballard Booking"
+                src="/images/seattle/1.png"
+                alt="Seattle Booking"
                 width={200}
                 height={200}
                 className="border-black border-4"
               />
             </Link>
-            <figcaption className="text-2xl">Ballard</figcaption>
+            <figcaption className="text-2xl">Seattle</figcaption>
           </figure>
 
           <figure className="border-4 border-black p-5">

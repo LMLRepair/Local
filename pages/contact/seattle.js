@@ -6,68 +6,68 @@ import Image from "next/image";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
-export default function Ballard() {
+export default function Seattle() {
   const images1 = [
     {
-      original: "/images/ballard/1.png",
-      thumbnail: "/images/ballard/1.png",
+      original: "/images/seattle/1.png",
+      thumbnail: "/images/seattle/1.png",
     },
     {
-      original: "/images/ballard/2.png",
-      thumbnail: "/images/ballard/2.png",
+      original: "/images/seattle/2.png",
+      thumbnail: "/images/seattle/2.png",
     },
     {
-      original: "/images/ballard/3.png",
-      thumbnail: "/images/ballard/3.png",
+      original: "/images/seattle/3.png",
+      thumbnail: "/images/seattle/3.png",
     },
     {
-      original: "/images/ballard/4.png",
-      thumbnail: "/images/ballard/4.png",
+      original: "/images/seattle/4.png",
+      thumbnail: "/images/seattle/4.png",
     },
     {
-      original: "/images/ballard/5.png",
-      thumbnail: "/images/ballard/5.png",
+      original: "/images/seattle/5.png",
+      thumbnail: "/images/seattle/5.png",
     },
     {
-      original: "/images/ballard/6.png",
-      thumbnail: "/images/ballard/6.png",
+      original: "/images/seattle/6.png",
+      thumbnail: "/images/seattle/6.png",
     },
     {
-      original: "/images/ballard/7.png",
-      thumbnail: "/images/ballard/7.png",
+      original: "/images/seattle/7.png",
+      thumbnail: "/images/seattle/7.png",
     },
     {
-      original: "/images/ballard/8.png",
-      thumbnail: "/images/ballard/8.png",
+      original: "/images/seattle/8.png",
+      thumbnail: "/images/seattle/8.png",
     },
     {
-      original: "/images/ballard/9.png",
-      thumbnail: "/images/ballard/9.png",
-    },
-    ,
-    {
-      original: "/images/ballard/10.png",
-      thumbnail: "/images/ballard/10.png",
-    },
-    {
-      original: "/images/ballard/11.png",
-      thumbnail: "/images/ballard/11.png",
+      original: "/images/seattle/9.png",
+      thumbnail: "/images/seattle/9.png",
     },
     ,
     {
-      original: "/images/ballard/12.png",
-      thumbnail: "/images/ballard/12.png",
+      original: "/images/seattle/10.png",
+      thumbnail: "/images/seattle/10.png",
     },
     {
-      original: "/images/ballard/13.png",
-      thumbnail: "/images/ballard/13.png",
+      original: "/images/seattle/11.png",
+      thumbnail: "/images/seattle/11.png",
+    },
+    ,
+    {
+      original: "/images/seattle/12.png",
+      thumbnail: "/images/seattle/12.png",
+    },
+    {
+      original: "/images/seattle/13.png",
+      thumbnail: "/images/seattle/13.png",
     },
   ];
   return (
-    <Layout pageName="Ballard Contact" pageDescription="Ballard Contact">
+    <Layout pageName="Seattle Contact" pageDescription="Seattle Contact">
       <div className="p-10 bg-white">
         <h1 className="text-4xl tracking-widest mx-auto flex justify-center text-center mb-10">
-          Ballard Contact
+          Seattle Contact
         </h1>
         <div className="p-10">
           <ImageGallery items={images1} autoPlay="true" />
@@ -80,7 +80,7 @@ export default function Ballard() {
                 <b>Tel:</b> (206) 745-2002
                 <br />
                 <b>Hours:</b> Mon-Sun 8:00am to 8:00pm <br />
-                <b>Email:</b> ballard@lmlrepair.com
+                <b>Email:</b> seattle@lmlrepair.com
               </p>{" "}
               <p className="text-lg my-5">
                 700 NW 42nd St STE #333, Seattle, WA 98107 <br />
