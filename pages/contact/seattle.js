@@ -119,7 +119,7 @@ export default function Seattle() {
               />
             </Link>
             <Link
-              href="https://www.yelp.com/biz/lml-repair-ballard-seattle"
+              href="https://www.yelp.com/biz/lml-repair-seattle-seattle"
               className="w-30 "
             >
               <Image
@@ -130,7 +130,7 @@ export default function Seattle() {
               />
             </Link>
             <Link
-              href="https://www.facebook.com/lmlrepairballard/"
+              href="https://www.facebook.com/lmlrepairseattle/"
               className="w-30"
             >
               <Image
