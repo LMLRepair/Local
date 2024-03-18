@@ -16,9 +16,9 @@ export default function Products({ data }) {
           <article className="grid gap-5 justify-center text-center p-10">
             {data.map((product) => (
               <figure key={product.index} className="border-4 border-black p-5">
-                <Link href={"/products/" + product.href}>
+                <Link href={"/products/" + product.url}>
                   <Image
-                    src={"/images/products/" + product.src}
+                    src={"/images/products/" + product.image}
                     alt={product.name}
                     width={200}
                     height={200}

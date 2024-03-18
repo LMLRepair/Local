@@ -16,10 +16,10 @@ export default function Accessories({ data }) {
                 key={accessorie.index}
                 className="border-4 border-black p-5"
               >
-                <Link href={"/products/accessories/" + accessorie.href}>
+                <Link href={"/products/accessories/" + accessorie.url}>
                   <Image
                     src={
-                      "/images/products/accessories/" + accessorie.src + ".png"
+                      "/images/products/accessories/" + accessorie.image + ".png"
                     }
                     alt={accessorie.name}
                     width={200}
