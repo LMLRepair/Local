@@ -1,16 +1,20 @@
 import Layout from "../components/layout";
 import Link from "next/link";
-
+import Hero from "../components/Hero";
 
 export default function Home() {
   return (
-    <Layout pageName="Home" pageDescription="Home">
-      <div
-        className="elfsight-app-88538ad3-00be-4dd0-992c-cec6654e9d2a"
-        data-elfsight-app-lazy
-      ></div>
+    <>
+      <Layout pageName="Home" pageDescription="Home">
+        <div>
+          <Hero />
+        </div>
+        {/* <div
+          className="elfsight-app-88538ad3-00be-4dd0-992c-cec6654e9d2a "
+          data-elfsight-app-lazy
+        ></div> */}
 
-      <div>
+        {/* <div>
         <div className="bg-yellow-300 flex justify-center items-center p-10">
           <div className="text-center">
             <h1 className="text-6xl tracking-widest">LML Repair</h1>
@@ -73,7 +77,7 @@ export default function Home() {
             All repairs come with a 60 day Warranty for your peace of mind
           </p>
           {/* <small className="text-sm my-5">No Refunds</small>*/}
-          <h1 className="text-2xl font-bold">BEST REPAIR SERVICE IN SEATTLE</h1>
+        {/* <h1 className="text-2xl font-bold">BEST REPAIR SERVICE IN SEATTLE</h1>
           <p className="text-lg my-5">
             LML Repair offers Seattle’s friendliest, fastest repair service with
             expert repairs for a variety of iPhone, iPad, Apple Watch, MacBook,
@@ -96,7 +100,8 @@ export default function Home() {
             data-elfsight-app-lazy
           ></div>
         </div>
-      </div>
-    </Layout>
+      </div> */}
+      </Layout>
+    </>
   );
 }
