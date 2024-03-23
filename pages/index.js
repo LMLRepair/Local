@@ -1,6 +1,10 @@
 import Layout from "../components/layout";
 import Link from "next/link";
-import Hero from "../components/Hero";
+import Hero from "@/components/Hero";
+import Gallery from "@/components/Gallery";
+import AboutUs from "@/components/AboutUs";
+import ChooseUs from "@/components/ChooseUs";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
@@ -8,6 +12,10 @@ export default function Home() {
       <Layout pageName="Home" pageDescription="Home">
         <div>
           <Hero />
+          <AboutUs />
+          <Services />
+          <ChooseUs />
+          <Gallery />
         </div>
         {/* <div
           className="elfsight-app-88538ad3-00be-4dd0-992c-cec6654e9d2a "
