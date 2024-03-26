@@ -1,12 +1,26 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn, staggerContainer, planetVariants } from "../utils/motion";
 
 function Faqs() {
   return (
-    <div className="flex flex-col  md:flex-row justify-center items-center mx-5 md:mx-16 my-5 md:my-16 gap-16">
-      <div className=" w-full md:w-1/2">
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="flex flex-col  md:flex-row justify-center items-center mx-5 md:mx-16 my-5 md:my-16 gap-16"
+    >
+      <motion.div
+        variants={planetVariants("left")}
+        className=" w-full md:w-1/2"
+      >
         <img className="w-full" src="/faq2.png" />
-      </div>
-      <div class="w-full md:w-1/2 px-5 bg-yellow-50 ">
+      </motion.div>
+      <motion.div
+        variants={fadeIn("up", "tween", 0.2, 1)}
+        class="w-full md:w-1/2 px-5 bg-yellow-50 "
+      >
         <div class="flex flex-col items-center">
           <h1 class="font-bold text-5xl mt-5  text-yellow-300 tracking-wider">
             FAQ
@@ -201,8 +215,8 @@ function Faqs() {
             </details>
           </div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 

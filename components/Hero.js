@@ -7,9 +7,8 @@ export default function Hero() {
     <motion.div
       variants={staggerContainer}
       initial="hidden"
-      animate="show"
-      exit="hidden"
-      transition={{ staggerChildren: 0.1 }}
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
       className="mt-14 md:mt-24"
     >
       <div className="flex flex-col justify-center items-center md:flex-row grid-col-1 md:grid-cols-2 mx-5 md:mx-16   ">
