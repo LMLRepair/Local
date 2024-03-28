@@ -6,13 +6,18 @@ import clientPromise from "../../../../lib/mongodb";
 export default function Samsung({ data }) {
   return (
     <Layout pageName="Samsung" Description="Samsung Repairs Page">
-      <main className="p-5 bg-white">
-        <section className="flex flex-col justify-center items-center p-5 bg-white">
-          <h1 className="text-3xl">Samsung Repairs</h1>
+      <main className="p-5 mt-10 md:mt-20  md:mx-4">
+        <section className="flex flex-col justify-center items-center p-5">
+          <h1 className="text-4xl tracking-widest text-yellow-300">
+            Samsung Repairs
+          </h1>
         </section>
-        <article className="grid grid-cols-2 gap-10 content-center items-center text-center justify-items-center p-10">
+        <article className="flex flex-col md:flex-row flex-wrap gap-5 justify-center text-center p-10">
           {data.map((samsung) => (
-            <figure key={samsung.index} className="border-4 border-black p-5">
+            <figure
+              key={samsung.index}
+              className="bg-gray-100 rounded-lg  flex flex-col justify-center items-center gap-10 py-14 md:py-6 p-5"
+            >
               <Link href={"/services/repairs/samsung/" + samsung.url}>
                 <Image
                   src={"/images/services/repairs/samsung/" + samsung.image}
