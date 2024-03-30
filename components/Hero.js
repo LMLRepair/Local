@@ -42,6 +42,8 @@ export default function Hero() {
           </h1>
         </motion.div>
         {/* Blocks on medium and large screen */}
+        {/* Blocks on medium and large screen */}
+
         <motion.div
           variants={planetVariants("right")}
           className="hidden md:flex justify-center items-center w-full h-full "
