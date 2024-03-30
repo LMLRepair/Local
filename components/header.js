@@ -40,7 +40,7 @@ function Header() {
 
   return (
     <nav className="fixed top-0 z-20 w-full">
-      {/* Desktop and Tablet screen */}
+      {/* Desktop and Tablet screen  */}
       <div
         className={`mx-auto md:mx-0 bg-white ${
           scrolled ? " shadow-sm" : "bg-transparent"
