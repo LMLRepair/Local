@@ -1,17 +1,19 @@
-import Image from 'next/image';
-import Layout from '../../../../../components/layout';
+import Image from "next/image";
+import Layout from "../../../../../components/layout";
 
 export default function galaxya() {
   return (
     <Layout pageName="galaxya" Description="galaxya Home Page">
-      <main className="p-5 bg-white">
-        <section className="flex flex-col justify-center items-center p-5 bg-white">
-          <h1 className="text-3xl mb-4">Galaxy A Series</h1>
+      <main className="p-5 mt-10 md:mt-20  md:mx-4">
+        <section className="flex flex-col justify-center items-center p-5">
+          <h1 className="text-4xl tracking-widest text-yellow-300">
+            Galaxy A Series
+          </h1>
         </section>
-        <section className="flex flex-col justify-center items-center">
+        <section className="flex flex-col md:flex-row flex-wrap gap-5 justify-center text-center p-10">
           <div>
             <Image
-              src={'/images/services/repairs/samsung/galaxya.png'}
+              src={"/images/services/repairs/samsung/galaxya.png"}
               alt="Galaxy A pic"
               width={200}
               height={200}
@@ -24,7 +26,6 @@ export default function galaxya() {
             anything. Cracked screens to batteries and most stuff in between.
             Contact us for specific details.
           </article>
-          
         </section>
       </main>
     </Layout>

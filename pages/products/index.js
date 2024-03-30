@@ -6,12 +6,26 @@ import clientPromise from "../../lib/mongodb";
 export default function Products({ data }) {
   return (
     <Layout pageName="Products" Description="Products">
-      <main className="p-5 bg-white">
+      <main className="p-5 bg-white mt-10 md:mt-20 mx-2 md:mx-4">
         <section className="flex flex-col justify-center items-center p-5 bg-white">
-          <h1 className="text-4xl tracking-widest">Products </h1>
+          <h1 className="text-4xl tracking-widest text-yellow-300">
+            Products{" "}
+          </h1>
           <p className="text-md ">
             Select the product category you are interested in
           </p>
+
+ redesigning
+          <article className="flex flex-col md:flex-row flex-wrap gap-5 justify-center text-center p-10">
+            <figure
+              // key={product.index}
+              className="bg-gray-100 rounded-lg p-5 flex flex-col justify-between gap-10"
+            >
+              <div className="w-52 h-44">
+                <Link href={"/products/accessories"}>
+                  <Image
+                    src={"/images/products/iphone.png"}
+                    alt="productname"
 
           <article className="grid gap-5 justify-center text-center p-10">
             {data.map((product) => (
@@ -20,13 +34,70 @@ export default function Products({ data }) {
                   <Image
                     src={"/images/products/" + product.image}
                     alt={product.name}
+ main
                     width={200}
                     height={200}
                   />
                 </Link>
-                <figcaption>{product.name}</figcaption>
-              </figure>
-            ))}
+              </div>
+              <div>
+                <figcaption>Accessories</figcaption>
+              </div>
+            </figure>
+            <figure
+              // key={product.index}
+              className="bg-gray-100 rounded-lg p-5 flex flex-col justify-between gap-10"
+            >
+              <div className="w-52 h-44">
+                <Link href={"/products/accessories"}>
+                  <Image
+                    src={"/images/products/mobile.png"}
+                    alt="productname"
+                    width={200}
+                    height={200}
+                  />
+                </Link>
+              </div>
+              <div>
+                <figcaption>Accessories</figcaption>
+              </div>
+            </figure>
+            <figure
+              // key={product.index}
+              className="bg-gray-100 rounded-lg p-5 flex flex-col justify-between gap-10"
+            >
+              <div className="w-52 h-44">
+                <Link href={"/products/accessories"}>
+                  <Image
+                    src={"/images/products/iphone.png"}
+                    alt="productname"
+                    width={200}
+                    height={200}
+                  />
+                </Link>
+              </div>
+              <div>
+                <figcaption>Accessories</figcaption>
+              </div>
+            </figure>
+            <figure
+              // key={product.index}
+              className="bg-gray-100 rounded-lg p-5 flex flex-col justify-between gap-10"
+            >
+              <div className="w-52 h-44">
+                <Link href={"/products/accessories"}>
+                  <Image
+                    src={"/images/products/mobile.png"}
+                    alt="productname"
+                    width={200}
+                    height={200}
+                  />
+                </Link>
+              </div>
+              <div>
+                <figcaption>Accessories</figcaption>
+              </div>
+            </figure>
           </article>
         </section>
       </main>

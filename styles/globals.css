@@ -4,14 +4,14 @@
 
 @font-face {
   font-family: myFont;
-  src: url('../Bangers-Regular.ttf');
+  src: url("../Bangers-Regular.ttf");
 }
 html,
 body {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
-
 
 /*  font-family: myFont;  */
 
@@ -38,12 +38,7 @@ figcaption {
   font-family: myFont;
 }
 
-
-
 /* Testing   */
-
-
-
 
 /*
 
@@ -75,3 +70,9 @@ body {
     rgb(var(--background-start-rgb));
 }
 */
+.radius {
+  border-radius: 5px 30px 5px 30px;
+}
+.radius1 {
+  border-radius: 5px 30px 30px 30px;
+}

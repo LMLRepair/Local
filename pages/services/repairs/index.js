@@ -6,15 +6,18 @@ import clientPromise from "../../../lib/mongodb";
 export default function Repairs({ data }) {
   return (
     <Layout pageName="Repairs" Description="Repairs">
-      <main className="p-5 bg-white">
+      <main className="p-5 bg-white mt-10 md:mt-20  md:mx-4">
         <section className="flex flex-col justify-center items-center p-5 bg-white">
-          <h1 className="text-4xl tracking-widest">Repairs</h1>
+          <h1 className="text-4xl tracking-widest text-yellow-300">Repairs</h1>
           <p className="text-md ">Select the device brand you like to fix</p>
         </section>
 
-        <article className="grid gap-5 justify-center text-center p-10">
+        <article className="flex flex-col md:flex-row flex-wrap gap-5 justify-center text-center p-10">
           {data.map((repair) => (
-            <figure key={repair.index} className="border-4 border-black p-5">
+            <figure
+              key={repair.index}
+              className="bg-gray-100 rounded-lg  flex flex-col justify-center items-center gap-10 py-14 md:py-6 p-5"
+            >
               <Link href={"/services/repairs/" + repair.url}>
                 <Image
                   src={"/images/services/repairs/" + repair.image + ".png"}

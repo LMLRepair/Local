@@ -1,18 +1,18 @@
-import Image from 'next/image';
-import Layout from '../../../../../components/layout';
-import Link from 'next/link';
+import Image from "next/image";
+import Layout from "../../../../../components/layout";
+import Link from "next/link";
 
-export default function macbook({data}) {
+export default function macbook({ data }) {
   return (
     <Layout pageName="MacBook" Description="MacBook Page">
-      <main className="p-5 bg-white">
+      <main className="p-5 bg-white mt-10 md:mt-20  md:mx-4">
         <section className="flex flex-col justify-center items-center p-5 bg-white">
-          <h1 className="text-3xl">MacBook</h1>
+          <h1 className="text-4xl tracking-widest text-yellow-300">MacBook</h1>
         </section>
-        <section className="flex flex-col justify-center items-center">
+        <section className="flex flex-col md:flex-row flex-wrap gap-5 justify-center text-center p-10">
           <div>
             <Image
-              src={'/images/services/repairs/apple/macbook.png'}
+              src={"/images/services/repairs/apple/macbook.png"}
               alt="Macbook pic"
               width={300}
               height={300}
