@@ -6,48 +6,53 @@ import Image from "next/image";
 export default function Bookings() {
   return (
     <Layout pageName="Bookings" Description="Bookings">
-      <div className="flex flex-col justify-center items-center p-10 bg-white">
-        <h1 className="text-4xl  tracking-widest">Bookings</h1>
-        <p className="text-md ">Select your preferred appointment location</p>
+      <div className="flex flex-col  justify-center items-center p-5 md:p-10 py-16 md:py-32">
+        <div className="mb-5">
+          {" "}
+          <h1 className="text-4xl text-yellow-300 tracking-widest mx-auto flex justify-center text-center">
+            Bookings
+          </h1>
+          <p className="text-md ">Select your preferred appointment location</p>
+        </div>
 
-        <article className="grid gap-5 justify-center text-center p-10">
-          <figure className="border-4 border-black p-5">
+        <article className="flex  bg-gray-100 flex-col md:flex-row gap-5 justify-center text-center p-5 md:p-14 rounded-lg ">
+          <figure className="bg-white radius p-5">
+            <figcaption className="text-2xl mb-3">West Seattle</figcaption>{" "}
             <Link href="/bookings/westseattle">
               <Image
                 src="/images/westseattle/1.png"
                 alt="West Seattle Booking"
                 width={200}
                 height={200}
-                className="border-black border-4"
+                className="rounded-lg"
               />
             </Link>
-            <figcaption className="text-2xl">West Seattle</figcaption>
           </figure>
 
-          <figure className="border-4 border-black p-5">
+          <figure className="bg-white radius p-5">
+            <figcaption className="text-2xl mb-3">Seattle</figcaption>{" "}
             <Link href="/bookings/seattle">
               <Image
                 src="/images/seattle/1.png"
                 alt="Seattle Booking"
                 width={200}
                 height={200}
-                className="border-black border-4"
+                className="rounded-lg"
               />
             </Link>
-            <figcaption className="text-2xl">Seattle</figcaption>
           </figure>
 
-          <figure className="border-4 border-black p-5">
+          <figure className="bg-white radius p-5">
+            <figcaption className="text-2xl mb-3">North Seattle</figcaption>{" "}
             <Link href="/bookings/northseattle">
               <Image
                 src="/images/northseattle/1.png"
                 alt="North Seattle Booking"
                 width={200}
                 height={200}
-                className="border-black border-4"
+                className="rounded-lg"
               />
             </Link>
-            <figcaption className="text-2xl">North Seattle</figcaption>
           </figure>
         </article>
       </div>

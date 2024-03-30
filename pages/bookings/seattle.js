@@ -3,7 +3,7 @@ import Layout from "../../components/layout";
 export default function Seattle() {
   return (
     <Layout pageName="Ballard Bookings" Description="Ballard Bookings">
-      <div className="container mx-auto">
+      <div className="container mx-auto my-24">
         <div className="flex flex-col justify-center items-center p-10 bg-white">
           <h1 className="text-4xl mb-10 tracking-widest"> Seattle Bookings</h1>
 

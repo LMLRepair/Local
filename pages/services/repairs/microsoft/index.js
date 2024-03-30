@@ -3,16 +3,21 @@ import Layout from "../../../../components/layout";
 import Link from "next/link";
 import clientPromise from "../../../../lib/mongodb";
 
-export default function Apple({data}) {
+export default function Apple({ data }) {
   return (
     <Layout pageName="Microsoft" Description="Microsoft Repairs Page">
-      <main className="p-5 bg-white">
-        <section className="flex flex-col justify-center items-center p-5 bg-white">
-          <h1 className="text-3xl">Microsoft Repairs</h1>
+      <main className="p-5 mt-10 md:mt-20  md:mx-4">
+        <section className="flex flex-col justify-center items-center p-5">
+          <h1 className="text-4xl tracking-widest text-yellow-300">
+            Microsoft Repairs
+          </h1>
         </section>
-        <article className="grid grid-cols-2 gap-10 content-center items-center text-center justify-items-center p-10">
+        <article className="flex flex-col md:flex-row flex-wrap gap-5 justify-center text-center p-10">
           {data.map((microsoft) => (
-            <figure key={microsoft.index} className="border-4 border-black p-5">
+            <figure
+              key={microsoft.index}
+              className="bg-gray-100 rounded-lg  flex flex-col justify-center items-center gap-10 py-14 md:py-6 p-5"
+            >
               <Link href={"/services/repairs/microsoft/" + microsoft.url}>
                 <Image
                   src={"/images/services/repairs/microsoft/" + microsoft.image}

@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Contact() {
   return (
     <Layout pageName="Contact" pageDescription="Contact">
-      <main className="flex flex-col  justify-center items-center p-10 py-32">
+      <main className="flex flex-col  justify-center items-center p-5 md:p-10 py-16 md:py-32">
         <div className="mb-5">
           <h1 className="text-4xl text-yellow-300 tracking-widest mx-auto flex justify-center text-center">
             Contact
@@ -16,7 +16,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <article className="flex  bg-gray-100 flex-col md:flex-row gap-5 justify-center text-center p-14 rounded-lg ">
+        <article className="flex  bg-gray-100 flex-col md:flex-row gap-5 justify-center text-center p-5 md:p-14 rounded-lg ">
           <figure className="bg-white radius p-5">
             <figcaption className="text-2xl mb-4">West Seattle</figcaption>
             <Link href="/contact/westseattle">

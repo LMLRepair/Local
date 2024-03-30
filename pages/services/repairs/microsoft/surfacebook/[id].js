@@ -1,8 +1,8 @@
-import Layout from '../../../../../components/layout';
-import clientPromise from '../../../../../lib/mongodb';
-import Image from 'next/image';
+import Layout from "../../../../../components/layout";
+import clientPromise from "../../../../../lib/mongodb";
+import Image from "next/image";
 
-export default function Id({surfacebook}) {
+export default function Id({ surfacebook }) {
   const surfacebookInfo = [];
   let person = surfacebook[0].repairs;
 
@@ -19,7 +19,10 @@ export default function Id({surfacebook}) {
         <section className="flex gap-10 flex-col justify-center items-center p-5">
           <h1 className="text-3xl">{surfacebook[0].model}</h1>
           <Image
-            src={'/images/services/repairs/microsoft/surfacebook/' + surfacebook[0].image}
+            src={
+              "/images/services/repairs/microsoft/surfacebook/" +
+              surfacebook[0].image
+            }
             alt={surfacebook[0].model}
             width={200}
             height={200}
@@ -39,8 +42,8 @@ export default function Id({surfacebook}) {
               return (
                 <tr key={p.name}>
                   <td>{p.name}</td>
-                  <td>{'$' + p.price}</td>
-                  <td>{p.time + ' Mins'}</td>
+                  <td>{"$" + p.price}</td>
+                  <td>{p.time + " Mins"}</td>
                 </tr>
               );
             })}
@@ -51,16 +54,14 @@ export default function Id({surfacebook}) {
   );
 }
 
-
-
-export async function getServerSideProps({params}) {
+export async function getServerSideProps({ params }) {
   // Fetch necessary data for the blog post using params.id
   const client = await clientPromise;
-  const db = client.db('microsoft');
+  const db = client.db("microsoft");
 
   let data = await db
-    .collection('surfacebook')
-    .find({url: params.id})
+    .collection("surfacebook")
+    .find({ url: params.id })
     .toArray();
   data = JSON.parse(JSON.stringify(data));
 
