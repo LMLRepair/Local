@@ -15,6 +15,7 @@ export default function Products({ data }) {
             Select the product category you are interested in
           </p>
 
+ redesigning
           <article className="flex flex-col md:flex-row flex-wrap gap-5 justify-center text-center p-10">
             <figure
               // key={product.index}
@@ -25,6 +26,15 @@ export default function Products({ data }) {
                   <Image
                     src={"/images/products/iphone.png"}
                     alt="productname"
+
+          <article className="grid gap-5 justify-center text-center p-10">
+            {data.map((product) => (
+              <figure key={product.index} className="border-4 border-black p-5">
+                <Link href={"/products/" + product.url}>
+                  <Image
+                    src={"/images/products/" + product.image}
+                    alt={product.name}
+ main
                     width={200}
                     height={200}
                   />
