@@ -12,6 +12,7 @@ export default function NorthSeattle() {
             {" "}
             North Seattle Bookings
           </h1>
+          <p className="text-center">Please specify your device and the repair needed inside Appointment Notes</p>
 
           <iframe
             src="https://squareup.com/appointments/book/89pnd6xdrlisrg/L2KXFBJVXE6H3/start"
