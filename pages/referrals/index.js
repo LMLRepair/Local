@@ -24,7 +24,12 @@ export default function Referrals() {
             </div>
             <div className="flex flex-row gap-3 my-5">
               <div>
-                <Image className="w-14" src="/repair.png" />
+                <Image
+                  className="w-14"
+                  width={100}
+                  height={100}
+                  src="/repair.png"
+                />
               </div>
               <div>
                 <h1 className="text-lg tracking-wider text-yellow-300">
@@ -38,7 +43,12 @@ export default function Referrals() {
             </div>
             <div className="flex flex-row gap-3 my-2">
               <div>
-                <Image className="w-14" src="/repair.png" />
+                <Image
+                  className="w-14"
+                  width={100}
+                  height={100}
+                  src="/repair.png"
+                />
               </div>
               <div>
                 <h1 className="text-lg tracking-wider text-yellow-300">
