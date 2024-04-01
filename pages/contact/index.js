@@ -53,6 +53,7 @@ export default function Contact() {
                 width={200}
                 height={200}
                 className="rounded-lg"
+                priority="high"
               />
             </Link>
           </figure>

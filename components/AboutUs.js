@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
+import Image from "next/image";
+
 function AboutUs() {
   return (
     <motion.div
@@ -39,7 +41,12 @@ function AboutUs() {
           </p>
         </div>
         <div className="w-full md:w-1/3 md:ml-10">
-          <img src="/images/about us/assistant.png" />
+          <Image
+            alt="assistant"
+            width={350}
+            height={350}
+            src="/images/about us/assistant.png"
+          />
         </div>
       </motion.div>
       <motion.div
@@ -47,7 +54,12 @@ function AboutUs() {
         className="flex flex-col md:flex-row justify-center items-center md:mt-4"
       >
         <div className="hidden md:block w-full md:w-1/3 ">
-          <img src="/images/about us/appiontment.png" />
+          <Image
+            alt="appiontment"
+            width={350}
+            height={350}
+            src="/images/about us/appiontment.png"
+          />
         </div>
         <div className="flex flex-col justify-between h-full bg-gray-100 md:ml-10 w-full md:w-1/2 p-4 md:p-7">
           <h1 className="mb-5 text-xl md:text-2xl">
@@ -61,7 +73,12 @@ function AboutUs() {
           </p>
         </div>
         <div className="block md:hidden w-full md:w-1/3 ">
-          <img src="/images/about us/appiontment.png" />
+          <Image
+            alt="appiontment"
+            width={350}
+            height={350}
+            src="/images/about us/appiontment.png"
+          />
         </div>
       </motion.div>
     </motion.div>

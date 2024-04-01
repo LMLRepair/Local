@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <>
@@ -9,7 +11,14 @@ export default function Footer() {
               href="/"
               className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
             >
-              <img src="/images/favicon.png" className="h-8" alt="lml Logo" />
+              <Image
+                width={100}
+                height={100}
+                priority="high"
+                src="/images/favicon.png"
+                className="h-8 w-8"
+                alt="lml Logo"
+              />
             </Link>
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium  sm:mb-0 ">
               <li>

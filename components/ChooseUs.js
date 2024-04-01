@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
+import Image from "next/image";
 
 function ChooseUs() {
   return (
@@ -27,7 +28,13 @@ function ChooseUs() {
         >
           <div className="flex flex-col justify-center items-center w-full md:w-1/4  bg-yellow-50 px-10 py-7 radius1">
             <div className="w-14 bg-yellow-300 rounded-full p-4 mb-3">
-              <img className="w-full" src="/repair.png" />
+              <Image
+                alt="repair"
+                width={100}
+                height={100}
+                className="w-full"
+                src="/repair.png"
+              />
             </div>
             <h1>HIGH-QUALITY PARTS</h1>
             <p className="text-md mt-3">
@@ -37,7 +44,13 @@ function ChooseUs() {
           </div>
           <div className=" flex flex-col justify-center items-center w-full md:w-1/4  bg-gray-50 px-10 py-7 radius1">
             <div className="w-14 bg-yellow-300 rounded-full p-4 mb-3">
-              <img className="w-full" src="/repair.png" />
+              <Image
+                alt="repair"
+                width={100}
+                height={100}
+                className="w-full"
+                src="/repair.png"
+              />
             </div>
             <h1>LOST COST DIAGNOSIS</h1>
             <p className="text-md mt-3">
@@ -47,7 +60,13 @@ function ChooseUs() {
           </div>
           <div className=" flex flex-col justify-center items-center w-full md:w-1/4  bg-yellow-50 px-10 py-7 radius1">
             <div className="w-14 bg-yellow-300 rounded-full p-4 mb-3">
-              <img className="w-full" src="/repair.png" />
+              <Image
+                alt="repair"
+                width={100}
+                height={100}
+                className="w-full"
+                src="/repair.png"
+              />
             </div>
             <h1>CERTIFIED TECHNICIAN SAME-DAY</h1>
             <p className="text-md mt-3">
@@ -57,7 +76,13 @@ function ChooseUs() {
           </div>
           <div className=" flex flex-col justify-center items-center w-full md:w-1/4  bg-yellow-50 px-10 py-7 radius1">
             <div className="w-14 bg-yellow-300 rounded-full p-4 mb-3">
-              <img className="w-full" src="/repair.png" />
+              <Image
+                alt="repair"
+                width={100}
+                height={100}
+                className="w-full"
+                src="/repair.png"
+              />
             </div>
             <h1>60 DAY WARRANTY</h1>
             <p className="text-md mt-3">
@@ -66,7 +91,13 @@ function ChooseUs() {
           </div>
           <div className=" flex flex-col justify-center items-center w-full md:w-1/4  bg-gray-50 px-10 py-7 radius1">
             <div className="w-14 bg-yellow-300 rounded-full p-4 mb-3">
-              <img className="w-full" src="/repair.png" />
+              <Image
+                alt="repair"
+                width={100}
+                height={100}
+                className="w-full"
+                src="/repair.png"
+              />
             </div>
             <h1>BEST REPAIR SERVICE IN SEATTLE</h1>
             <p className="text-md mt-3">
@@ -76,7 +107,13 @@ function ChooseUs() {
           </div>
           <div className=" flex flex-col justify-center items-center w-full md:w-1/4  bg-yellow-50 px-10 py-7 radius1">
             <div className="w-14 bg-yellow-300 rounded-full p-4 mb-3">
-              <img className="w-full" src="/repair.png" />
+              <Image
+                alt="repair"
+                width={100}
+                height={100}
+                className="w-full"
+                src="/repair.png"
+              />
             </div>
             <h1>HIGH-QUALITY PARTS</h1>
             <p className="text-md mt-3">
@@ -86,7 +123,13 @@ function ChooseUs() {
           </div>
         </motion.div>
       </motion.div>
-      <img src="/wave.svg" />
+      <Image
+        alt="wave"
+        className="w-full "
+        width={100}
+        height={100}
+        src="/wave.svg"
+      />
     </>
   );
 }

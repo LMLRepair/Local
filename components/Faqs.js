@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer, planetVariants } from "../utils/motion";
+import Image from "next/image";
 
 function Faqs() {
   return (
@@ -15,17 +16,23 @@ function Faqs() {
         variants={planetVariants("left")}
         className=" w-full md:w-1/2"
       >
-        <img className="w-full" src="/faq2.png" />
+        <Image
+          alt="faq"
+          width={400}
+          height={400}
+          className="w-full"
+          src="/faq2.png"
+        />
       </motion.div>
       <motion.div
         variants={fadeIn("up", "tween", 0.2, 1)}
-        class="w-full md:w-1/2 px-5 bg-yellow-50 "
+        className="w-full md:w-1/2 px-5 bg-yellow-50 "
       >
-        <div class="flex flex-col items-center">
-          <h1 class="font-bold text-5xl mt-5  text-yellow-300 tracking-wider">
+        <div className="flex flex-col items-center">
+          <h1 className="font-bold text-5xl mt-5  text-yellow-300 tracking-wider">
             FAQ
           </h1>
-          <h1 class="text-neutral-500 text-xl mt-3 tracking-wider">
+          <h1 className="text-neutral-500 text-xl mt-3 tracking-wider">
             Frequenty asked questions
           </h1>
         </div>
@@ -38,11 +45,11 @@ function Faqs() {
                   <svg
                     fill="none"
                     height="24"
-                    shape-rendering="geometricPrecision"
+                    shapeRendering="geometricPrecision"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     width="24"
                   >
@@ -63,11 +70,11 @@ function Faqs() {
                   <svg
                     fill="none"
                     height="24"
-                    shape-rendering="geometricPrecision"
+                    shapeRendering="geometricPrecision"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     width="24"
                   >
@@ -89,11 +96,11 @@ function Faqs() {
                   <svg
                     fill="none"
                     height="24"
-                    shape-rendering="geometricPrecision"
+                    shapeRendering="geometricPrecision"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     width="24"
                   >
@@ -112,15 +119,15 @@ function Faqs() {
             <details className="group">
               <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                 <span> Do you offer any discounts?</span>
-                <span class="transition group-open:rotate-180">
+                <span className="transition group-open:rotate-180">
                   <svg
                     fill="none"
                     height="24"
-                    shape-rendering="geometricPrecision"
+                    shapeRendering="geometricPrecision"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     width="24"
                   >
@@ -128,25 +135,25 @@ function Faqs() {
                   </svg>
                 </span>
               </summary>
-              <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+              <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
                 Yes! We offer discounts for multiple repairs considering your
                 needs. There may be other temporary discounts. Call us
               </p>
             </details>
           </div>
-          <div class="py-5">
-            <details class="group">
-              <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+          <div className="py-5">
+            <details className="group">
+              <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                 <span> Do you accept credit cards?</span>
-                <span class="transition group-open:rotate-180">
+                <span className="transition group-open:rotate-180">
                   <svg
                     fill="none"
                     height="24"
-                    shape-rendering="geometricPrecision"
+                    shapeRendering="geometricPrecision"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     width="24"
                   >
@@ -154,25 +161,25 @@ function Faqs() {
                   </svg>
                 </span>
               </summary>
-              <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+              <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
                 Yes. We take Mastercard, Visa, Discover, and even American
                 Express ect.
               </p>
             </details>
           </div>
-          <div class="py-5">
-            <details class="group">
-              <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+          <div className="py-5">
+            <details className="group">
+              <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                 <span> Do you offer warranty?</span>
-                <span class="transition group-open:rotate-180">
+                <span className="transition group-open:rotate-180">
                   <svg
                     fill="none"
                     height="24"
-                    shape-rendering="geometricPrecision"
+                    shapeRendering="geometricPrecision"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     width="24"
                   >
@@ -180,7 +187,7 @@ function Faqs() {
                   </svg>
                 </span>
               </summary>
-              <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+              <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
                 Our 60-day warranty guarantees the quality of both the parts we
                 use and our labour. If any replaced part malfunctions within
                 this period, we'll redo the repair at no extra charge. Please
@@ -189,19 +196,19 @@ function Faqs() {
               </p>
             </details>
           </div>
-          <div class="py-5">
-            <details class="group">
-              <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+          <div className="py-5">
+            <details className="group">
+              <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                 <span> Are you closed on holidays?</span>
-                <span class="transition group-open:rotate-180">
+                <span className="transition group-open:rotate-180">
                   <svg
                     fill="none"
                     height="24"
-                    shape-rendering="geometricPrecision"
+                    shapeRendering="geometricPrecision"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     width="24"
                   >
@@ -209,7 +216,7 @@ function Faqs() {
                   </svg>
                 </span>
               </summary>
-              <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+              <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
                 No. We are always open.
               </p>
             </details>
