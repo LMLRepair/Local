@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer, planetVariants } from "../utils/motion";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -17,9 +18,11 @@ export default function Hero() {
           variants={planetVariants("right")}
           className="sm:block md:hidden flex justify-center items-center w-full h-full "
         >
-          <img
-            height={100}
-            width={100}
+          <Image
+            alt="hero"
+            priority="high"
+            height={450}
+            width={450}
             className="w-64  md:w-full md:h-full"
             src="/hero.png"
           />
@@ -48,12 +51,26 @@ export default function Hero() {
           variants={planetVariants("right")}
           className="hidden md:flex justify-center items-center w-full h-full "
         >
-          <img className="w-96" src="/hero.png" />
+          <Image
+            alt="hero"
+            priority="high"
+            width={450}
+            height={450}
+            className="w-96"
+            src="/hero.png"
+          />
         </motion.div>
       </div>
       {/* Wave image  */}
       <motion.div variants={fadeIn("up", "tween", 0.2, 1)}>
-        <img src="/wave.svg" />
+        <Image
+          alt="wave"
+          priority="high"
+          width={450}
+          height={450}
+          className="w-full"
+          src="/wave.svg"
+        />
       </motion.div>
     </motion.div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
+import Image from "next/image";
 
 export default function Gallery() {
   return (
@@ -25,32 +26,50 @@ export default function Gallery() {
         className="flex flex-wrap grid-col-2 md:grid-cols-3 gap-4 justify-center items-center"
       >
         <div className="flex md:flex-col gap-4">
-          <img
+          <Image
+            alt="gallery"
+            width={300}
+            height={300}
             className="rounded-lg w-36 h-36 md:w-72 md:h-80 "
             src="/images/gallery/pic1.jpg"
           />
-          <img
+          <Image
+            alt="gallery"
+            width={300}
+            height={300}
             className="rounded-lg  w-36 h-36 md:w-72 md:h-52 "
             src="/images/gallery/pic2.jpg"
           />
         </div>
         <div className="flex md:flex-col gap-4">
-          <img
+          <Image
+            alt="gallery"
+            width={300}
+            height={300}
             className="rounded-lg w-36 h-36 md:w-72 md:h-52 "
             src="/images/gallery/pic4.jpg"
           />
-          <img
+          <Image
+            alt="gallery"
+            width={300}
+            height={300}
             className="rounded-lg  w-36 h-36 md:w-72 md:h-80 "
             src="/images/gallery/pic3.jpg"
           />
         </div>
 
         <div className="flex md:flex-col gap-4">
-          <img
+          <Image
+            alt="gallery"
+            width={300}
+            height={300}
             className="rounded-lg w-36 h-36 md:w-72 md:h-80 "
             src="/images/gallery/pic5.jpg"
           />
-          <img
+          <Image
+            alt="gallery"
+            width={300}
+            height={300}
             className="rounded-lg  w-36 h-36 md:w-72 md:h-52 "
             src="/images/gallery/pic1.jpg"
           />

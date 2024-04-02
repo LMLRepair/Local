@@ -7,7 +7,8 @@ export default function Layout({ children, pageName, pageDescription }) {
   return (
     <div>
       <Head>
-        <title>LML Repair | {pageName}</title>
+        <title>{`LML Repair | ${pageName}`}</title>
+
         <meta name="description" content={pageDescription + " Page"} />
         <link rel="icon" href="/images/favicon.png" />
       </Head>
@@ -26,7 +27,7 @@ export default function Layout({ children, pageName, pageDescription }) {
       </Script>
       <Header />
       {children}
-  
+
       <noscript>Your browser does not have javascript enabled.</noscript>
       <Script
         strategy="afterInteractive"
@@ -38,7 +39,7 @@ export default function Layout({ children, pageName, pageDescription }) {
         data-elfsight-app-lazy
       ></div>
 
-          <Footer />
+      <Footer />
     </div>
   );
 }

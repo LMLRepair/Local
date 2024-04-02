@@ -81,6 +81,8 @@ export default function WestSeattle() {
               <Image
                 width={400}
                 height={400}
+                alt="contact"
+                priority="high"
                 src="/images/contact/contact.png"
               />
             </div>
@@ -92,6 +94,7 @@ export default function WestSeattle() {
                     <Image
                       width={30}
                       height={30}
+                      alt="phone"
                       className="w-6 h-6 md:w-8 md:h-8"
                       src="/images/contact/phone.png"
                     />
@@ -103,6 +106,7 @@ export default function WestSeattle() {
                     <Image
                       width={30}
                       height={30}
+                      alt="hours"
                       className="w-6 h-6 md:w-8 md:h-8"
                       src="/images/contact/hours.png"
                     />
@@ -113,6 +117,7 @@ export default function WestSeattle() {
                     <Image
                       width={30}
                       height={30}
+                      alt="mail"
                       className="w-6 h-6 md:w-8 md:h-8"
                       src="/images/contact/mail.png"
                     />
@@ -124,6 +129,7 @@ export default function WestSeattle() {
                   <Image
                     width={30}
                     height={30}
+                    alt="location"
                     className="w-6 h-6 md:w-8 md:h-8"
                     src="/images/contact/location.png"
                   />

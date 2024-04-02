@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
+import Image from "next/image";
 
 function Services() {
   return (
@@ -26,7 +27,13 @@ function Services() {
       >
         <div className=" flex flex-row justify-center items-center w-full md:w-1/3   bg-white px-5 py-7 radius">
           <div className="w-14 bg-yellow-200 rounded-full p-2 mb-3">
-            <img className="w-full" src="/repair.png" />
+            <Image
+              alt="repair"
+              width={100}
+              height={100}
+              className="w-full"
+              src="/repair.png"
+            />
           </div>
           <div className="flex flex-col ml-4">
             <h1>HIGH-QUALITY PARTS</h1>
@@ -38,7 +45,13 @@ function Services() {
         </div>
         <div className=" flex flex-row justify-center items-center w-full md:w-1/3  bg-white px-5 py-7 radius">
           <div className="w-14 bg-yellow-200 rounded-full p-2 mb-3">
-            <img className="w-full" src="/repair.png" />
+            <Image
+              alt="repair"
+              width={100}
+              height={100}
+              className="w-full"
+              src="/repair.png"
+            />
           </div>
           <div className="flex flex-col ml-4">
             <h1>HIGH-QUALITY PARTS</h1>
@@ -50,7 +63,13 @@ function Services() {
         </div>
         <div className=" flex flex-row justify-center items-center w-full md:w-1/3  bg-white px-5 py-7 radius">
           <div className="w-14 bg-yellow-200 rounded-full p-2 mb-3">
-            <img className="w-full" src="/repair.png" />
+            <Image
+              alt="repair"
+              width={100}
+              height={100}
+              className="w-full"
+              src="/repair.png"
+            />
           </div>
           <div className="flex flex-col ml-4">
             <h1>HIGH-QUALITY PARTS</h1>
@@ -60,10 +79,22 @@ function Services() {
             </p>
           </div>
         </div>
-        <img className="w-52" src="/service.png" />
+        <Image
+          alt="repair"
+          width={100}
+          height={100}
+          className="w-52"
+          src="/service.png"
+        />
         <div className=" flex flex-row justify-center items-center w-full md:w-1/3  bg-white px-5 py-7 radius">
           <div className="w-14 bg-yellow-200 rounded-full p-2 mb-3">
-            <img className="w-full" src="/repair.png" />
+            <Image
+              alt="repair"
+              width={100}
+              height={100}
+              className="w-full"
+              src="/repair.png"
+            />
           </div>
           <div className="flex flex-col ml-4">
             <h1>HIGH-QUALITY PARTS</h1>
@@ -75,7 +106,13 @@ function Services() {
         </div>
         <div className=" flex flex-row justify-center items-center w-full md:w-1/3  bg-white px-5 py-7 radius">
           <div className="w-14 bg-yellow-200 rounded-full p-2 mb-3">
-            <img className="w-full" src="/repair.png" />
+            <Image
+              alt="repair"
+              width={100}
+              height={100}
+              className="w-full"
+              src="/repair.png"
+            />
           </div>
           <div className="flex flex-col ml-4">
             <h1>HIGH-QUALITY PARTS</h1>
@@ -87,7 +124,13 @@ function Services() {
         </div>
         <div className=" flex flex-row justify-center items-center w-full md:w-1/3  bg-white px-5 py-7 radius">
           <div className="w-14 bg-yellow-200 rounded-full p-2 mb-3">
-            <img className="w-full" src="/repair.png" />
+            <Image
+              alt="repair"
+              width={100}
+              height={100}
+              className="w-full"
+              src="/repair.png"
+            />
           </div>
           <div className="flex flex-col ml-4">
             <h1>HIGH-QUALITY PARTS</h1>
