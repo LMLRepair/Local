@@ -61,9 +61,9 @@ export default function Footer() {
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <span className="block text-sm text-gray-600 sm:text-center dark:text-gray-600">
             © 2024
-            <a href="/" className=" ml-2 mr-2 hover:underline">
+            <Link href="/" className=" ml-2 mr-2 hover:underline">
               LML Repair
-            </a>
+            </Link>
             All Rights Reserved.
           </span>
         </div>
