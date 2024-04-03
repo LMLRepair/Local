@@ -28,6 +28,7 @@ export default function Referrals() {
                   className="w-14"
                   width={100}
                   height={100}
+                  alt="repair"
                   src="/repair.png"
                 />
               </div>
@@ -47,6 +48,7 @@ export default function Referrals() {
                   className="w-14"
                   width={100}
                   height={100}
+                  alt="repair"
                   src="/repair.png"
                 />
               </div>
