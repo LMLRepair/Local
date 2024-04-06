@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Layout from '../../../components/layout';
+import Image from "next/image";
+import Layout from "../../../components/layout";
 
 export default function insurance() {
   return (
@@ -11,16 +11,14 @@ export default function insurance() {
         <section className="flex flex-col justify-center items-center">
           <div>
             <Image
-              src={'/images/products/insurance.jpeg'}
+              src={"/images/products/accessories/insurance.jpeg"}
               alt="Macbook pic"
               width={200}
               height={200}
             />
           </div>
 
-          <article className="text-center p-10">
-           Coming Soon!
-          </article>
+          <article className="text-center p-10">Coming Soon!</article>
         </section>
       </main>
     </Layout>
