@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer, planetVariants } from "../utils/motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -40,9 +41,11 @@ export default function Hero() {
             technicians ensure swift, reliable solutions, restoring your devices
             to optimal performance. Trust us with your repairs today.
           </h4>
-          <h1 className="bg-yellow-300 px-2 py-2 flex justify-center items-center w-32 mt-10">
+          <Link href="/bookings" className="bg-yellow-300 px-2 py-2 flex justify-center items-center w-32 mt-10">
             Book Now
-          </h1>
+          </Link>
+
+          
         </motion.div>
         {/* Blocks on medium and large screen */}
         {/* Blocks on medium and large screen */}
