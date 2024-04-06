@@ -16,82 +16,27 @@ export default function Products({ data }) {
           </p>
 
           <article className="flex flex-col md:flex-row flex-wrap gap-5 justify-center text-center p-10">
-            <figure
-              // key={product.index}
-              className="bg-gray-100 rounded-lg p-5 flex flex-col justify-between gap-10"
-            >
-              <div className="w-52 h-44">
-                <Link href={"/products/accessories"}>
-                  <Image
-                    src={"/images/products/iphone.png"}
-                    priority="high"
-                    alt="productname"
-                    width={200}
-                    height={200}
-                  />
-                </Link>
-              </div>
-              <div>
-                <figcaption>Accessories</figcaption>
-              </div>
-            </figure>
-            <figure
-              // key={product.index}
-              className="bg-gray-100 rounded-lg p-5 flex flex-col justify-between gap-10"
-            >
-              <div className="w-52 h-44">
-                <Link href={"/products/accessories"}>
-                  <Image
-                    src={"/images/products/mobile.png"}
-                    priority="high"
-                    alt="productname"
-                    width={200}
-                    height={200}
-                  />
-                </Link>
-              </div>
-              <div>
-                <figcaption>Accessories</figcaption>
-              </div>
-            </figure>
-            <figure
-              // key={product.index}
-              className="bg-gray-100 rounded-lg p-5 flex flex-col justify-between gap-10"
-            >
-              <div className="w-52 h-44">
-                <Link href={"/products/accessories"}>
-                  <Image
-                    src={"/images/products/iphone.png"}
-                    priority="high"
-                    alt="productname"
-                    width={200}
-                    height={200}
-                  />
-                </Link>
-              </div>
-              <div>
-                <figcaption>Accessories</figcaption>
-              </div>
-            </figure>
-            <figure
-              // key={product.index}
-              className="bg-gray-100 rounded-lg p-5 flex flex-col justify-between gap-10"
-            >
-              <div className="w-52 h-44">
-                <Link href={"/products/accessories"}>
-                  <Image
-                    src={"/images/products/mobile.png"}
-                    alt="productname"
-                    priority="high"
-                    width={200}
-                    height={200}
-                  />
-                </Link>
-              </div>
-              <div>
-                <figcaption>Accessories</figcaption>
-              </div>
-            </figure>
+            {data.map((accessorie) => (
+              <figure
+                key={accessorie.index}
+                className="bg-gray-100 rounded-lg p-5 flex flex-col justify-between gap-10"
+              >
+                <div className="w-52 h-44">
+                  <Link href={"/products/" + accessorie.url}>
+                    <Image
+                      src={"/images/products/accessories/" + accessorie.image}
+                      priority="high"
+                      alt={accessorie.name}
+                      width={200}
+                      height={200}
+                    />
+                  </Link>
+                </div>
+                <div>
+                  <figcaption>{accessorie.name}</figcaption>
+                </div>
+              </figure>
+            ))}
           </article>
         </section>
       </main>

@@ -3,6 +3,7 @@ import clientPromise from "../../../lib/mongodb";
 import Image from "next/image";
 
 export default function Id({ accessorie }) {
+  console.log(accessorie);
   const accessorieInfo = [];
   let person = accessorie[0].types;
 

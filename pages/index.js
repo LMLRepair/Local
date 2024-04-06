@@ -97,11 +97,11 @@ export default function Home() {
             </p>
           </div> */}
 
-        <div className="elfsight-app-46eba886-4955-417d-9e36-b02ca1a0e69b p-10 mx-5 md:mx-16"></div>
+        <div className="elfsight-app-46eba886-4955-417d-9e36-b02ca1a0e69b p-10 mx-3 md:mx-16"></div>
 
-        <div className="elfsight-app-21af9976-08a4-410b-ab8c-1a076f700795 p-10 mx-5 md:mx-16"></div>
+        <div className="elfsight-app-21af9976-08a4-410b-ab8c-1a076f700795 p-10 mx-3 md:mx-16"></div>
 
-        <div className="elfsight-app-9ea36a6a-a2d4-43b8-9084-5610880cc84f p-10 mx-5 md:mx-16"></div>
+        <div className="elfsight-app-9ea36a6a-a2d4-43b8-9084-5610880cc84f p-10 mx-3 md:mx-16"></div>
         <Faqs />
 
         {/* <div className="p-10">

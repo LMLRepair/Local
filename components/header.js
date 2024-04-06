@@ -32,7 +32,8 @@ function Header() {
     }
   };
 
-  const handleSetActivePage = (title) => {
+  const handleSetActivePage = (title, e) => {
+    e.preventDefault();
     if (title !== activePage) {
       setActivePage(title);
     }
@@ -71,8 +72,8 @@ function Header() {
                       ? " text-black bg-yellow-300  py-2 px-3 ml-64 "
                       : ""
                   }`}
-                  onClick={() => {
-                    handleSetActivePage(nav.title);
+                  onClick={(e) => {
+                    handleSetActivePage(nav.title, e);
                   }}
                 >
                   {<Link href={`${nav.id} `}> {nav.title}</Link>}
