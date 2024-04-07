@@ -11,22 +11,31 @@ export default function Accessories({ data }) {
           <h1 className="text-3xl  mb-10">Accessories </h1>
 
           <article className="flex flex-col md:flex-row flex-wrap  gap-5 justify-center text-center p-10">
-            <figure className="bg-gray-100 rounded-lg flex flex-col justify-between gap-10 p-5">
-              <div>
-                <Link href={"/products/accessories/chargers"}>
-                  <Image
-                    src={"/images/products/accessories/iphone.png"}
-                    priority="high"
-                    alt="accessorie name"
-                    width={200}
-                    height={200}
-                  />
-                </Link>
-              </div>
-              <div>
-                <figcaption>iphone</figcaption>
-              </div>
-            </figure>
+            {data.map((accessorie) => (
+              <figure
+                key={accessorie.index}
+                className="bg-gray-100 rounded-lg flex flex-col justify-between gap-10 p-5"
+              >
+                <div>
+                  <Link href={"/products/accessories/" + accessorie.url}>
+                    <Image
+                      src={
+                        "/images/products/accessories/" +
+                        accessorie.image +
+                        ".png"
+                      }
+                      alt={accessorie.name}
+                      priority="high"
+                      width={200}
+                      height={200}
+                    />
+                  </Link>
+                </div>
+                <div>
+                  <figcaption>{accessorie.name}</figcaption>
+                </div>
+              </figure>
+            ))}
           </article>
         </section>
       </main>
