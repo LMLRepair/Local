@@ -71,7 +71,7 @@ function ChooseUs() {
             <h1>CERTIFIED TECHNICIANS</h1>
             <p className="text-md mt-3">
              Knowledgeable, passionate service from qualified and trained
-            experts. Most LML repairs are completed within 30 minutes
+            experts. 
             </p>
           </div>
           <div className=" flex flex-col justify-center items-center w-full md:w-1/4  bg-yellow-50 px-10 py-7 radius1">
@@ -101,7 +101,7 @@ function ChooseUs() {
             </div>
             <h1>BEST REPAIR SERVICE</h1>
             <p className="text-md mt-3">
-              LML Repair offers Seattle’s friendliest, fastest repair service with expert repairs for a variety of  devices.  And, with an affordable warranty plans on all repairs, we’ve got your back when things go wrong in future
+              LML Repair offers Seattle’s friendliest, fastest repair service with expert repairs for a variety of  devices.
             </p>
           </div>
           <div className=" flex flex-col justify-center items-center w-full md:w-1/4  bg-yellow-50 px-10 py-7 radius1">
