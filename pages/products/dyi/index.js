@@ -12,7 +12,7 @@ export default function DYI() {
           <section className="flex flex-col justify-center items-center">
             <div>
               <Image
-                src={"/images/products/dyi.jpeg"}
+                src={"/images/products/accessories/dyi.jpeg"}
                 alt="Macbook pic"
                 width={200}
                 height={200}

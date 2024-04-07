@@ -15,7 +15,7 @@ export default function Accessories({ data }) {
               <div>
                 <Link href={"/products/accessories/chargers"}>
                   <Image
-                    src={"/images/products/iphone.png"}
+                    src={"/images/products/accessories/iphone.png"}
                     priority="high"
                     alt="accessoriename"
                     width={200}
