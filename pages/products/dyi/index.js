@@ -13,7 +13,7 @@ export default function DYI() {
             <div>
               <Image
                 src={"/images/products/accessories/dyi.jpeg"}
-                alt="Macbook pic"
+                alt="Macbookpic"
                 width={200}
                 height={200}
               />

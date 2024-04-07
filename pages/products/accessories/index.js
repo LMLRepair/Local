@@ -17,7 +17,7 @@ export default function Accessories({ data }) {
                   <Image
                     src={"/images/products/accessories/iphone.png"}
                     priority="high"
-                    alt="accessoriename"
+                    alt="accessorie name"
                     width={200}
                     height={200}
                   />
