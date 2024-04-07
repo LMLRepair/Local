@@ -10,7 +10,7 @@ function Services() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="flex flex-col mx-5 md:mx-16 my-24 bg-yellow-100 px-6  py-7 rounded-lg"
+      className="flex flex-col mx-5 md:mx-24 my-24 bg-yellow-100 px-6  py-7 rounded-lg"
     >
       <motion.div
         variants={fadeIn("up", "tween", 0.2, 1)}
