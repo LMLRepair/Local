@@ -55,7 +55,7 @@ function ChooseUs() {
             <h1>LOST COST DIAGNOSIS</h1>
             <p className="text-md mt-3">
               Not sure what’s wrong? We’ll diagnose your issue at a low cost.
-              With fix, no fee.
+              With fix, no fee
             </p>
           </div>
           <div className=" flex flex-col justify-center items-center w-full md:w-1/4  bg-yellow-50 px-10 py-7 radius1">
@@ -70,8 +70,8 @@ function ChooseUs() {
             </div>
             <h1>CERTIFIED TECHNICIAN SAME-DAY</h1>
             <p className="text-md mt-3">
-              LML Repair only uses high-quality OEM and aftermarket parts for
-              repairs
+             Knowledgeable, passionate service from qualified and trained
+            experts. Most LML repairs are completed within 30 minutes
             </p>
           </div>
           <div className=" flex flex-col justify-center items-center w-full md:w-1/4  bg-yellow-50 px-10 py-7 radius1">
@@ -101,8 +101,7 @@ function ChooseUs() {
             </div>
             <h1>BEST REPAIR SERVICE IN SEATTLE</h1>
             <p className="text-md mt-3">
-              LML Repair only uses high-quality OEM and aftermarket parts for
-              repairs
+              LML Repair offers Seattle’s friendliest, fastest repair service with expert repairs for a variety of  devices.  And, with an affordable warranty plans on all repairs, we’ve got your back when things go wrong in future
             </p>
           </div>
           <div className=" flex flex-col justify-center items-center w-full md:w-1/4  bg-yellow-50 px-10 py-7 radius1">
@@ -115,10 +114,9 @@ function ChooseUs() {
                 src="/repair.png"
               />
             </div>
-            <h1>HIGH-QUALITY PARTS</h1>
+            <h1>CONVENIENT LOCATIONS </h1>
             <p className="text-md mt-3">
-              LML Repair only uses high-quality OEM and aftermarket parts for
-              repairs
+              With multiple locations across the city, finding a nearby LML Repair shop is easy and convenient for you
             </p>
           </div>
         </motion.div>
