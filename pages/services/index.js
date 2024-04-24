@@ -26,11 +26,11 @@ export default function Services({ data }) {
               <div>
                 <Link href={"/services/" + service.url}>
                   <Image
-                    className="rounded-lg "
+                    className="rounded-lg w-48 h-48 "
                     src={"/images/services/" + service.image + ".png"}
                     alt={service.name}
-                    width={200}
-                    height={200}
+                    width={100}
+                    height={100}
                   />
                 </Link>
               </div>
