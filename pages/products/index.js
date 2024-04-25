@@ -24,11 +24,16 @@ export default function Products({ data }) {
                 <div className="w-52 h-44">
                   <Link href={"/products/" + accessorie.url}>
                     <Image
-                      src={"/images/products/accessories/" + accessorie.image}
+                      src={
+                        "/images/products/accessories/" +
+                        accessorie.image +
+                        ".png"
+                      }
                       priority="high"
                       alt={accessorie.name}
                       width={200}
                       height={200}
+                      className="w-48 h-52"
                     />
                   </Link>
                 </div>

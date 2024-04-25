@@ -28,6 +28,7 @@ export default function Accessories({ data }) {
                       priority="high"
                       width={200}
                       height={200}
+                      className="w-48 h-52"
                     />
                   </Link>
                 </div>
