@@ -11,7 +11,7 @@ export default function insurance() {
         <section className="flex flex-col justify-center items-center">
           <div>
             <Image
-              src={"/images/products/accessories/insurance.jpeg"}
+              src={"/images/products/accessories/insurance.png"}
               alt="Macbook pic"
               width={200}
               height={200}

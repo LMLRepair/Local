@@ -22,7 +22,9 @@ export default function Id({ accessorie }) {
           <section className="flex gap-10 flex-col justify-center items-center p-5">
             <h1 className="text-3xl">{accessorie[0].name}</h1>
             <Image
-              src={"/images/products/accessories/" + accessorie[0].image}
+              src={
+                "/images/products/accessories/" + accessorie[0].image + ".png"
+              }
               alt={accessorie[0].name}
               width={200}
               height={200}

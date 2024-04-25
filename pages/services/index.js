@@ -26,7 +26,7 @@ export default function Services({ data }) {
               <div>
                 <Link href={"/services/" + service.url}>
                   <Image
-                    className="rounded-lg w-48 h-48 "
+                    className="rounded-lg w-48 h-52 "
                     src={"/images/services/" + service.image + ".png"}
                     alt={service.name}
                     width={100}

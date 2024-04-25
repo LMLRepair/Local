@@ -24,6 +24,7 @@ export default function Repairs({ data }) {
                   alt={repair.brand}
                   width={200}
                   height={200}
+                  className="w-60 h-52"
                 />
               </Link>
               <figcaption>{repair.brand}</figcaption>

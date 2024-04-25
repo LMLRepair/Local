@@ -24,6 +24,7 @@ export default function Apple({ data }) {
                   alt={apple.brand}
                   width={200}
                   height={200}
+                  className="w-48 h-52"
                 />
               </Link>
               <figcaption>{apple.category}</figcaption>
