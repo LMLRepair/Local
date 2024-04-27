@@ -18,7 +18,7 @@ export default function Id({ one }) {
           <section className="flex gap-3 md:gap-10 flex-col justify-center items-center p-5">
             <h1 className="text-3xl">{one[0].model}</h1>
             <Image
-              src={"/images/services/repairs/oneplus/" + one[0].image}
+              src={"/images/services/repairs/oneplus/phones/" + one[0].image}
               alt={one[0].model}
               width={200}
               height={200}
