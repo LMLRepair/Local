@@ -14,7 +14,6 @@ export default function Id({ pad }) {
     <Layout pageName={pad[0].model} Description={pad[0].description}>
       <main className="flex flex-col my-10 md:my-24 justify-center items-center mx-5 md:mx-16">
         <div className="flex flex-col md:flex-row ">
-          {" "}
           <section className="flex gap-10 flex-col justify-center items-center p-5">
             <h1 className="text-2xl">{pad[0].model}</h1>
             <Image
