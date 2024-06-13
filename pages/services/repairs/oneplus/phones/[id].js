@@ -51,7 +51,7 @@ export default function Id({ one }) {
                         {p.name}
                       </td>
                       <td className="text-dark border-b border-l   dark:bg-dark-3 dark:border-dark dark:text-dark-7 py-5 px-2 text-center text-base font-medium">
-                        {"$" + p.price}
+                        {"Call"}
                       </td>
                       <td className="text-dark border-b border-l   dark:bg-dark-3 dark:border-dark dark:text-dark-7 py-5 px-2 text-center text-base font-medium">
                         {p.time + " Mins"}
