@@ -92,7 +92,7 @@ export default function WestSeattle() {
                       className="w-6 h-6 md:w-8 md:h-8"
                       src="/images/contact/hours.png"
                     />
-                    <b className="text-yellow-300">Hours:</b> Mon-Sun 8AM to 8PM{" "}
+                    <b className="text-yellow-300">Hours:</b> Mon-Sun 8AM to 7PM{" "}
                   </div>
                   <div className="flex flex-row items-center gap-2">
                     {" "}
@@ -116,10 +116,10 @@ export default function WestSeattle() {
                     src="/images/contact/location.png"
                   />
                   <b className="text-yellow-300">Address:</b>
-                  3400 Harbor Ave SW STE #332 Seattle, WA 98126
+                  3400 Harbor Ave SW STE #301 Seattle, WA 98126
                 </div>
                 <b>
-                  <small>Use callbox at the elevator or dial 00332 </small>
+                  <small>Use callbox at the elevator or dial 00301 </small>
                 </b>
               </div>
               <Script
